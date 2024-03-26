@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café delicioso</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Café delicioso</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#bebidas">Bebidas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#bakery">Bakery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#salados">Salados</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <h1>Bienvenido al Café delicioso</h1>
+    <p>Disfruta de nuestro delicioso café y pasteles</p>
+    <a href="#menu" class="btn btn-primary btn-lg">Ver menú</a>
+  </div>
+
+  <div class="container">
+    <h2 id="menu">Nuestro Menú</h2>
+    <div class="row">
+      <div class="col-md-4 menu-item">
+        <img src="ruta_de_la_imagen_espresso.jpg" alt="Café Espresso">
+        <h3>Café Espresso</h3>
+        <p>Un café fuerte y aromático servido en una taza pequeña.</p>
+      </div>
+      <div class="col-md-4 menu-item">
+        <img src="ruta_de_la_imagen_latte.jpg" alt="Café Latte">
+        <h3>Café Latte</h3>
+        <p>Una combinación suave de café espresso y leche caliente.</p>
+      </div>
+      <div class="col-md-4 menu-item">
+        <img src="ruta_de_la_imagen_pastel.jpg" alt="Pastel de Chocolate">
+        <h3>Pastel de Chocolate</h3>
+        <p>Un delicioso pastel de chocolate para acompañar tu café.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 id="bebidas">Bebidas</h2>
+    <!-- Contenido de bebidas -->
+  </div>
+
+  <div class="container">
+    <h2 id="bakery">Bakery</h2>
+    <!-- Contenido de bakery -->
+  </div>
+
+  <div class="container">
+    <h2 id="salados">Salados</h2>
+    <!-- Contenido de salados -->
+  </div>
+
+  <div class="container">
+    <h2>Contáctenos</h2>
+    <form>
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea class="form-control" id="mensaje" rows="5" placeholder="Escriba su mensaje aquí"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
