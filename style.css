@@ -1,92 +1,97 @@
 @font-face {
-  font-family: 'Roboto';
-  src: url('assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-family: "Roboto";
+  src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
 }
 
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: #0B0A0A;
-  background-color: #FAF5F2;
+  color: #0b0a0a;
+  background-color: #faf5f2;
 }
 
-  .top-pagina {
-    text-align: center;
-    padding-top: 10px;
-    background-color: #DDCEBD;
-  }
-  .top-p {
-    margin-bottom: 0;
-  }
+.top-pagina {
+  text-align: center;
+  padding-top: 10px;
+  background-color: #ddcebd;
+}
+.top-p {
+  margin-bottom: 0;
+}
 
-  .jumbotron {
-    background-image: url(./assets/img/Wireframe\ -\ 2.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: local;
-    color: #271F16;
-    padding: 100px 0;
-    text-align:left;
-  }
+.jumbotron {
+  background-image: url(./assets/img/Wireframe\ -\ 2.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: local;
+  color: #271f16;
+  padding: 100px 0;
+  text-align: left;
+}
 
-  .titulo-banner {
-    margin-bottom: 10px;
-    font-size: 5rem;
-    font-weight: 30px;
-    letter-spacing: 3px;
-    font-weight: bold;
-  }
+.titulo-banner {
+  margin-bottom: 10px;
+  font-size: 5rem;
+  font-weight: 30px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
 
+.texto-banner {
+  font-size: 25px;
+}
 
+.boton-menu {
+  background-color: #d97e42;
+  color: #ffff;
+}
 
-  .texto-banner {
-    font-size: 25px;
-  }
+.menu-item {
+  margin-bottom: 20px;
+}
 
+nav {
+  background-color: #736452;
+}
 
-  .boton-menu {
-    background-color: #D97E42;
-    color: #ffff;
-  }
+.navbar-brand {
+  color: #ffff;
+  margin-left: 30px;
+}
 
+.navbar-brand:hover {
+  color: #0b0a0a;
+}
 
-  .menu-item {
-    margin-bottom: 20px;
-  }
+.nav-link {
+  color: #ffff;
+}
 
+.nav-link:hover {
+  color: #0b0a0a;
+}
 
-
-  nav {
-    background-color: #736452 ;
-    
-  }
-
-  .navbar-brand {
-    color: #ffff;
-    margin-left: 30px;
-  }
-
-  .navbar-brand:hover {
-    color: #0B0A0A;
-  }
-
-  .nav-link {
-    color: #ffff;
-    
-  }
-
-  .nav-link:hover {
-    color: #0B0A0A;
-  }
-
-  .navbar-nav {
-    margin-left: auto;
-    justify-content: end;
-  }
-
-
+.navbar-nav {
+  margin-left: auto;
+  justify-content: end;
+}
 
 .logo {
   width: 50px;
   height: 50px;
+}
+
+#btn-form {
+  background-color: #d97e42;
+  color: #ffff;
+}
+
+#btn-form:hover {
+  background-color: #ffff;
+  color: #0b0a0a;
+  border-color: #d97e42;
+}
+
+.btn:hover {
+  border-color: #d97e42;
 }
