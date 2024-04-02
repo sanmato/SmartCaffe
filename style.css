@@ -7,17 +7,20 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   color: #0B0A0A;
-  background: #DDCEBD;
-  }
+  background-color: #FAF5F2;
+}
 
   .top-pagina {
     text-align: center;
     padding-top: 10px;
+    background-color: #DDCEBD;
+  }
+  .top-p {
     margin-bottom: 0;
   }
 
   .jumbotron {
-    background-image: url(assets/img/Wireframe\ -\ 2.png);
+    background-image: url(./assets/img/Wireframe\ -\ 2.png);
     background-size: cover;
     background-position: center;
     background-attachment: local;
@@ -60,6 +63,7 @@ body {
 
   .navbar-brand {
     color: #ffff;
+    margin-left: 30px;
   }
 
   .navbar-brand:hover {
@@ -68,6 +72,7 @@ body {
 
   .nav-link {
     color: #ffff;
+    
   }
 
   .nav-link:hover {
@@ -79,7 +84,9 @@ body {
     justify-content: end;
   }
 
-  .nav1 {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
