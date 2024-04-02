@@ -6,20 +6,80 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(to right, rgb(19, 96, 70), rgb(90, 189, 217) );
+  color: #0B0A0A;
+  background: #DDCEBD;
   }
-  .jumbotron {
-    background-image: url('https://seedamm-plaza.ch/images/Essen-Ausgehen/Olea/Restaurant_OLEA_2_1500x600.jpg');
-    background-size: cover;
-    color: #fff;
+
+  .top-pagina {
     text-align: center;
-    padding: 100px 0;
+    padding-top: 10px;
+    margin-bottom: 0;
   }
+
+  .jumbotron {
+    background-image: url(assets/img/Wireframe\ -\ 2.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: local;
+    color: #271F16;
+    padding: 100px 0;
+    text-align:left;
+  }
+
+  .titulo-banner {
+    margin-bottom: 10px;
+    font-size: 5rem;
+    font-weight: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+  }
+
+
+
+  .texto-banner {
+    font-size: 25px;
+  }
+
+
+  .boton-menu {
+    background-color: #D97E42;
+    color: #ffff;
+  }
+
+
   .menu-item {
     margin-bottom: 20px;
   }
 
+
+
   nav {
-    background: linear-gradient(to right, rgb(19, 96, 70), rgb(90, 189, 217) );
+    background-color: #736452 ;
+    
+  }
+
+  .navbar-brand {
+    color: #ffff;
+  }
+
+  .navbar-brand:hover {
+    color: #0B0A0A;
+  }
+
+  .nav-link {
+    color: #ffff;
+  }
+
+  .nav-link:hover {
+    color: #0B0A0A;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+    justify-content: end;
+  }
+
+  .nav1 {
+    padding-left: 50px;
+    padding-right: 50px;
   }

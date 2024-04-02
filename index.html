@@ -1,79 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Somos una tienda de café especializada, con distintas variedades de granos de café">
-  <meta name="keywords" content="café desayuno cafetería tienda expreso ">
-  <title>Café delicioso</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somos una tienda de café especializada, con distintas variedades de granos de café">
+    <meta name="keywords" content="café desayuno cafetería tienda expreso ">
+    <title>Smart Coffee</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="top-pagina">
+      <p><strong>Envío gratis</strong> a partir de $50.000</p>
+    </section>
 
-  <div class="jumbotron">
-    <h1>Bienvenido al Café delicioso</h1>
-    <p>Disfruta de nuestro delicioso café y pasteles</p>
-    <a href="#menu" class="btn btn-primary btn-lg">Ver menú</a>
-  </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid nav1">
+        <a class="navbar-brand" href="#">SmartCoffee</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pastelería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <div class="container">
-    <h2 id="menu">Nuestro Menú</h2>
-    <div class="row">
-      <div class="col-md-4 menu-item">
-        <img src="ruta_de_la_imagen_espresso.jpg" alt="Café Espresso">
-        <h3>Café Espresso</h3>
-        <p>Un café fuerte y aromático servido en una taza pequeña.</p>
-      </div>
-      <div class="col-md-4 menu-item">
-        <img src="ruta_de_la_imagen_latte.jpg" alt="Café Latte">
-        <h3>Café Latte</h3>
-        <p>Una combinación suave de café espresso y leche caliente.</p>
-      </div>
-      <div class="col-md-4 menu-item">
-        <img src="ruta_de_la_imagen_pastel.jpg" alt="Pastel de Chocolate">
-        <h3>Pastel de Chocolate</h3>
-        <p>Un delicioso pastel de chocolate para acompañar tu café.</p>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="titulo-banner">SmartCoffee</h1>
+        <div class="banner">
+          <p class="texto-banner">Un café para un buen día</p>
+          <a href="#menu" class="boton-menu btn btn-lg">Productos</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="container">
-    <h2 id="bebidas">Bebidas</h2>
-    <!-- Contenido de bebidas -->
-  </div>
 
-  <div class="container">
-    <h2 id="bakery">Bakery</h2>
-    <!-- Contenido de bakery -->
-  </div>
 
-  <div class="container">
-    <h2 id="salados">Salados</h2>
-    <!-- Contenido de salados -->
-  </div>
 
-  <div class="container">
-    <h2>Contáctenos</h2>
-    <form>
-      <div class="form-group">
-        <label for="nombre">Nombre:</label>
-        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+    <div class="container">
+      <h2 id="menu">Nuestro Menú</h2>
+      <div class="row">
+        <div class="col-md-4 menu-item">
+          <img src="ruta_de_la_imagen_espresso.jpg" alt="Café Espresso">
+          <h3>Café Espresso</h3>
+          <p>Un café fuerte y aromático servido en una taza pequeña.</p>
+        </div>
+        <div class="col-md-4 menu-item">
+          <img src="ruta_de_la_imagen_latte.jpg" alt="Café Latte">
+          <h3>Café Latte</h3>
+          <p>Una combinación suave de café espresso y leche caliente.</p>
+        </div>
+        <div class="col-md-4 menu-item">
+          <img src="ruta_de_la_imagen_pastel.jpg" alt="Pastel de Chocolate">
+          <h3>Pastel de Chocolate</h3>
+          <p>Un delicioso pastel de chocolate para acompañar tu café.</p>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="email">Correo electrónico:</label>
-        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
-      </div>
-      <div class="form-group">
-        <label for="mensaje">Mensaje:</label>
-        <textarea class="form-control" id="mensaje" rows="5" placeholder="Escriba su mensaje aquí"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-  </div>
+    </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+    <div class="container">
+      <h2 id="bebidas">Bebidas</h2>
+      <!-- Contenido de bebidas -->
+    </div>
+
+    <div class="container">
+      <h2 id="bakery">Bakery</h2>
+      <!-- Contenido de bakery -->
+    </div>
+
+    <div class="container">
+      <h2 id="salados">Salados</h2>
+      <!-- Contenido de salados -->
+    </div>
+
+    <div class="container">
+      <h2>Contáctenos</h2>
+      <form>
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea class="form-control" id="mensaje" rows="5" placeholder="Escriba su mensaje aquí"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>
