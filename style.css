@@ -3,6 +3,11 @@
   src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Sunny";
+  src: url("assets/fonts/Sunny.ttf") format("truetype");
+}
+
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -41,7 +46,8 @@ body {
 
 .titulo-banner {
   margin-bottom: 0.625rem;
-  font-size: 4rem;
+  font-family:"Sunny", sans-serif;
+  font-size: 5rem;
   font-weight: 1.875rem;
   letter-spacing: 0.188rem;
   font-weight: bold;
