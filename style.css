@@ -117,3 +117,38 @@ nav {
 .btn:hover {
   border-color: #d97e42;
 }
+
+
+
+.division-section {
+  text-align: center;
+  background-color: #271f16;
+  color: #faf5f2;
+  padding-bottom: 0.625rem;
+  padding-top: 0.700rem;
+}
+.division-section p {
+  margin: 0;
+}
+
+.servicios {
+  background-color: #ddcebd;
+  color: #271f16;
+  padding: 10px 40px;
+  text-align: center;
+}
+
+.servicios h2 {
+  font-family: "Sunny", sans-serif;
+  margin-bottom: 10px;
+}
+
+.servicios h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.servicios p {
+  font-size: 14px;
+}
