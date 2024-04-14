@@ -149,16 +149,27 @@ nav {
   margin: 0;
 }
 
+/*ESTILOS SECCION DE SERVICIOS*/
+
+.grid-container-servicios {
+  display: grid;
+  gap: 20px 50px;
+  grid-template-columns: auto auto auto;
+  justify-content:space-around;
+}
+
+
 .servicios {
   background-color: #ddcebd;
   color: #271f16;
-  padding: 10px 40px;
+  padding:10px;
   text-align: center;
 }
 
 .servicios h2 {
   font-family: "Sunny", sans-serif;
   margin-bottom: 10px;
+  padding-left: 20px;
 }
 
 .servicios h3 {
