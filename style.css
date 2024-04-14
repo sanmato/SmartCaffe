@@ -25,54 +25,46 @@ body {
 
 /*NAVBAR*/
 
+header {
+  background-color: #271f16;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
 nav {
-  background-color: #736452;
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  margin-top: 10px;
 }
 
-.navbar-brand {
-  color: #ffff;
-  margin-left: 1.875rem;
+nav ul {
+  display: flex;
+  list-style-type: none;
 }
 
-.navbar-brand:hover {
-  color: #0b0a0a;
+header a {
+  text-decoration: none;
+  color:#faf5f2;
+  margin-left: 40px;
 }
 
-.nav-link {
-  color: #ffff;
-}
 
-.nav-link:hover {
-  color: #0b0a0a;
-}
-
-.navbar-nav {
-  margin-left: auto;
-  justify-content: end;
+nav ul li a:hover {
+  color: #d97e42;
 }
 
 .logo {
-  width: 3.125rem;
-  height: 3.125rem;
+  margin-left: 50px;
 }
 
-#btn-form {
-  background-color: #d97e42;
-  color: #ffff;
-}
-
-#btn-form:hover {
-  background-color: #ffff;
-  color: #0b0a0a;
-  border-color: #d97e42;
-}
-
-.btn:hover {
-  border-color: #d97e42;
+.logo img {
+  width: 50px;
 }
 
 
-
+/*ESTILOS TOP PAGE*/
 
 .top-pagina {
   text-align: center;
@@ -85,7 +77,7 @@ nav {
 
 
 
-
+/*ESTILOS BANNER INICIO*/
 
 .jumbotron {
   background-image: url(./assets/img/Wireframe\ -\ 2.png);
@@ -136,7 +128,23 @@ nav {
 }
 
 
+#btn-form {
+  background-color: #d97e42;
+  color: #ffff;
+}
 
+#btn-form:hover {
+  background-color: #ffff;
+  color: #0b0a0a;
+  border-color: #d97e42;
+}
+
+.btn:hover {
+  border-color: #d97e42;
+}
+
+
+/*ESTILOS SECTION FRASE DIVISORA*/
 
 .division-section {
   text-align: center;
