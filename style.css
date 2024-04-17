@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 @font-face {
   font-family: "Roboto";
   src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
@@ -22,9 +21,7 @@ body {
   background-color: #faf5f2;
 }
 
-
-/*NAVBAR*/
-
+/* NAVBAR */
 header {
   background-color: #271f16;
   padding: 10px 10px;
@@ -46,10 +43,9 @@ nav ul {
 
 header a {
   text-decoration: none;
-  color:#faf5f2;
+  color: #faf5f2;
   margin-left: 40px;
 }
-
 
 nav ul li a:hover {
   color: #d97e42;
@@ -63,9 +59,7 @@ nav ul li a:hover {
   width: 50px;
 }
 
-
-/*ESTILOS TOP PAGE*/
-
+/* ESTILOS TOP PAGE */
 .top-pagina {
   text-align: center;
   padding-top: 0.625rem;
@@ -75,10 +69,7 @@ nav ul li a:hover {
   margin-bottom: 0;
 }
 
-
-
-/*ESTILOS BANNER INICIO*/
-
+/* ESTILOS BANNER INICIO */
 .jumbotron {
   background-image: url(./assets/img/Wireframe\ -\ 2.png);
   background-size: cover;
@@ -101,7 +92,7 @@ nav ul li a:hover {
 
 .titulo-banner {
   margin-bottom: 0.625rem;
-  font-family:"Sunny", sans-serif;
+  font-family: "Sunny", sans-serif;
   font-size: 5rem;
   font-weight: 1.875rem;
   letter-spacing: 0.188rem;
@@ -120,57 +111,73 @@ nav ul li a:hover {
 
 .boton-menu {
   background-color: #d97e42;
-  color: #ffff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.boton-menu:hover {
+  background-color: #271f16;
+  color: #faf5f2;
 }
 
 .menu-item {
   margin-bottom: 1.25rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+.menu-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
 
 #btn-form {
   background-color: #d97e42;
-  color: #ffff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 1rem;
 }
 
 #btn-form:hover {
-  background-color: #ffff;
-  color: #0b0a0a;
-  border-color: #d97e42;
+  background-color: #271f16;
+  color: #faf5f2;
 }
 
-.btn:hover {
-  border-color: #d97e42;
-}
-
-
-/*ESTILOS SECTION FRASE DIVISORA*/
-
+/* ESTILOS SECTION FRASE DIVISORA */
 .division-section {
   text-align: center;
   background-color: #271f16;
   color: #faf5f2;
   padding-bottom: 0.625rem;
-  padding-top: 0.700rem;
+  padding-top: 0.7rem;
 }
 .division-section p {
   margin: 0;
 }
 
-/*ESTILOS SECCION DE SERVICIOS*/
-
+/* ESTILOS SECCION DE SERVICIOS */
 .grid-container-servicios {
   display: grid;
   gap: 20px 50px;
   grid-template-columns: auto auto auto;
-  justify-content:space-around;
+  justify-content: space-around;
+  margin-top: 2rem;
 }
-
 
 .servicios {
   background-color: #ddcebd;
   color: #271f16;
-  padding:10px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -188,4 +195,33 @@ nav ul li a:hover {
 
 .servicios p {
   font-size: 14px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem;
+}
+
+.col {
+  flex: 1 0 33.33%;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .col {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .col {
+    flex-basis: 100%;
+  }
 }
