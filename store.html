@@ -8,11 +8,17 @@
       content="Somos una tienda de café especializada, con distintas variedades de granos de café"
     />
     <meta name="keywords" content="café desayuno cafetería tienda expreso" />
-    <title>Smart Coffee - Tienda</title>
+    <title>Smart Coffee</title>
     <link
       rel="shortcut icon"
       href="./assets/img/smart_coffee_logoblanco.svg"
       type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -22,8 +28,8 @@
     </section>
     <header>
       <div class="logo">
-        <a href="./">
-          <img
+        <a href="./"
+          ><img
             src="./assets/img/logo1.png"
             alt="Logo de la tienda de café SmartCoffe"
           />SmartCoffe</a
@@ -31,53 +37,21 @@
       </div>
       <nav>
         <ul>
-          <li><a href="./">Inicio</a></li>
-          <li><a href="#">Tienda</a></li>
-          <li><a href="#bebidas">Café</a></li>
-          <li><a href="#bakery">Pastelería</a></li>
-          <li><a href="#contactenos">Contacto</a></li>
+          <li><a href="./">Volver a Inicio</a></li>
         </ul>
       </nav>
     </header>
 
-    <div class="container">
-      <h2>Productos Destacados</h2>
-      <div class="productos">
-        <div class="producto">
-          <img src="ruta-a-imagen1.jpg" alt="Producto 1" />
-          <h3>Nombre del Producto 1</h3>
-          <p>Descripción corta del producto.</p>
-          <p class="precio">$10.00</p>
-          <button class="btn">Agregar al carrito</button>
-        </div>
-        <div class="producto">
-          <img src="ruta-a-imagen2.jpg" alt="Producto 2" />
-          <h3>Nombre del Producto 2</h3>
-          <p>Descripción corta del producto.</p>
-          <p class="precio">$12.00</p>
-          <button class="btn">Agregar al carrito</button>
-        </div>
-        <!-- Agrega más productos según sea necesario -->
-      </div>
+    <h2>Nuestros Productos</h2>
+    <div id="cafeContainer" class="container">
+      <h2 id="cafe">Café en Grano</h2>
+      <div class="row" id="cafeItems"></div>
+    </div>
+    <div id="accesoriosContainer" class="container">
+      <h2 id="accesorios">Accesorios</h2>
+      <div class="row" id="accesoriosItems"></div>
     </div>
 
-    <!-- Aquí puedes seguir añadiendo más secciones con productos, categorías, etc. -->
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-      crossorigin="anonymous"
-    ></script>
     <script src="script.js"></script>
   </body>
 </html>
