@@ -116,6 +116,32 @@ const createMenuContainers = () => {
   }
 };
 
+window.addEventListener("DOMContentLoaded", () => {
+  const navbarContainer = document.getElementById("navbar-container");
+
+  fetch("navbar.html")
+    .then((response) => response.text())
+    .then((html) => {
+      navbarContainer.innerHTML = html;
+    })
+    .catch((error) => console.error("Error al cargar la navbar:", error));
+});
+
+let navBar = document.getElementById("navbar-container");
+let sticky = navBar.offsetTop;
+
+window.onscroll = () => {
+  staticNav();
+};
+
+const staticNav = () => {
+  if (window.scrollY >= sticky) {
+    navBar.classList.add("sticky");
+  } else {
+    navBar.classList.remove("sticky");
+  }
+};
+
 window.onload = () => {
   createMenuContainers();
 };

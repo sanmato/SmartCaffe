@@ -27,6 +27,8 @@ header {
   padding: 10px 10px;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  z-index: 1000;
 }
 
 nav {
@@ -45,6 +47,8 @@ header a {
   text-decoration: none;
   color: #faf5f2;
   margin-left: 40px;
+  float: left;
+  display: block;
 }
 
 nav ul li a:hover {
@@ -223,4 +227,22 @@ nav ul li a:hover {
   .col {
     flex-basis: 100%;
   }
+}
+
+.content {
+  padding: 1rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 3.75rem;
+}
+
+#navbar-container {
+  z-index: 1000;
 }
