@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 @font-face {
   font-family: "Roboto";
   src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
@@ -175,7 +176,6 @@ nav ul li a:hover {
   gap: 20px 50px;
   grid-template-columns: auto auto auto;
   justify-content: space-around;
-  margin-top: 2rem;
 }
 
 .servicios {
@@ -245,4 +245,85 @@ nav ul li a:hover {
 
 #navbar-container {
   z-index: 1000;
+}
+
+
+/* ESTILOS FOOTER*/
+
+footer {
+  background-color:#ddcebd;
+}
+
+footer .redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+footer .redes .redes-titulo {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 18px;
+  padding: 20px 10px 5px 10px;
+  color:#271f16;
+}
+
+footer .redes .redes-titulo h3 {
+  font-weight: bold;
+  color:#271f16;
+}
+footer .redes .redes-titulo p {
+  font-size: 1rem;
+  color:#271f16;
+  margin-bottom: 5px;
+}
+
+footer .redes ul {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+footer .redes ul li {
+  margin: 0px 10px;
+  list-style-type: none;
+}
+
+footer .redes ul li:hover {
+  transform: translateY(-2px);
+}
+
+
+footer .redes  a{
+  text-decoration: none;
+  color:#271f16;
+}
+
+footer .contacto-footer {
+  display: flex;
+  justify-content: center;
+  color: #271f16;
+}
+
+footer .contacto-footer p {
+  margin: 0 10px 10px 10px;
+}
+
+footer .social ul li:hover {
+  transform: translateY(-2px);
+}
+footer .autor {
+  text-align: center;
+  font-size: 15px;
+  background-color:#271f16;
+}
+
+footer .autor p {
+  padding: 0px;
+  margin: 0px;
+  color:#faf5f2;
+  letter-spacing: 2px
 }
