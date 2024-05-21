@@ -11,8 +11,8 @@
 }
 
 @font-face {
-  font-family: "Sunny";
-  src: url("assets/fonts/Sunny.ttf") format("truetype");
+  font-family: "TiltWarp";
+  src: url("assets/fonts/TiltWarp[XROT\,YROT].ttf") format("truetype");
 }
 
 body {
@@ -61,7 +61,7 @@ nav ul li a:hover {
 }
 
 .logo img {
-  width: 50px;
+  width: 70px;
 }
 
 /* ESTILOS TOP PAGE */
@@ -97,10 +97,10 @@ nav ul li a:hover {
 
 .titulo-banner {
   margin-bottom: 0.625rem;
-  font-family: "Sunny", sans-serif;
-  font-size: 5rem;
+  font-family: "TiltWarp", sans-serif;
+  font-size: 3.6rem;
   font-weight: 1.875rem;
-  letter-spacing: 0.188rem;
+  letter-spacing: 0.1rem;
   font-weight: bold;
   align-self: flex-start;
 }
@@ -131,17 +131,47 @@ nav ul li a:hover {
 }
 
 .menu-item {
-  margin-bottom: 1.25rem;
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem; /* Reducido el espacio entre las tarjetas */
+  padding: 0.75rem; /* Reducido el espacio interno de las tarjetas */
   border-radius: 0.25rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Sombra más suave */
+  background-color: #fff; /* Fondo blanco para las tarjetas */
 }
 
 .menu-item img {
   max-width: 100%;
   height: auto;
   border-radius: 0.25rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem; /* Reducido el espacio entre la imagen y el texto */
+}
+
+.menu-item h3 {
+  font-size: 1.1rem; /* Tamaño de fuente reducido */
+  font-weight: bold;
+  margin-top: 0.5rem; /* Reducido el espacio entre el título y la imagen */
+}
+
+.menu-item p {
+  font-size: 14px; /* Tamaño de fuente reducido */
+}
+
+.menu-item .boton-comprar {
+  background-color: #d97e42;
+  color: #fff;
+  padding: 0.5rem 1rem; /* Reducido el espacio del botón */
+  border-radius: 0.25rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.875rem; /* Tamaño de fuente reducido */
+  margin-top: auto; /* Ajusta el espacio entre el último elemento y el botón */
+}
+
+.menu-item .boton-comprar:hover {
+  background-color: #271f16;
+  color: #faf5f2;
 }
 
 #btn-form {
@@ -186,7 +216,7 @@ nav ul li a:hover {
 }
 
 .servicios h2 {
-  font-family: "Sunny", sans-serif;
+  font-family: "TiltWarp", sans-serif;
   padding-left: 15px;
 }
 
