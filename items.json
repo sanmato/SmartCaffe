@@ -15,7 +15,7 @@
   },
   {
     "category": "bakery",
-    "imgSrc": "./assets/img/pastelchocolate.jpg",
+    "imgSrc": "./assets/img/pastelfrutilla.jpg",
     "alt": "Pastel de Chocolate",
     "title": "Pastel de Chocolate",
     "description": "Un delicioso pastel de chocolate para acompañar tu café."
@@ -68,5 +68,19 @@
     "alt": "Molinillo",
     "title": "Molinillo Eléctrico",
     "description": "Molinillo eléctrico, con estilo de molienda a selección."
+  },
+  {
+    "category": "bakery",
+    "imgSrc": "./assets/img/lemonpie.jpg",
+    "alt": "Lemon Pie",
+    "title": "Si la vida te da limones...",
+    "description": "Qué mejor que hacer un delicioso Lemon Pie?"
+  },
+  {
+    "category": "bebidas",
+    "imgSrc": "./assets/img/mocca.jpg",
+    "alt": "Mocca",
+    "title": "Mocca",
+    "description": "Una deliciosa combinación de espresso, leche vaporizada, crema batida y un toque de chocolate, para deleitar tus sentidos."
   }
 ]
