@@ -227,49 +227,6 @@ nav ul li a:hover {
 }
 
 /* ESTILOS SECCION DE PASTELERIA */
-.grid-container-pasteleria {
-  display: grid;
-  grid-column-gap: 1.5rem;
-  grid-template-columns: 25% 25% 25%;
-  justify-content: center;
-  padding: 1rem 1rem;
-  background-color: #faf5f2;
-}
-
-.pasteleria h2 {
-  font-family: "TiltWarp", sans-serif;
-  font-size: 1.5rem;
-  text-align: center;
-  padding-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-.pasteleria h3 {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.pasteleria p {
-  font-size: 14px;
-}
-
-.boton-comprar {
-  background-color: #d97e42;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1rem;
-  align-self: center; /* Coloca el botón al final del contenedor */
-  margin-top: auto; /* Ajusta el espacio entre el último elemento y el botón */
-}
-
-.boton-comprar:hover {
-  background-color: #271f16;
-  color: #faf5f2;
-}
 
 @media (max-width: 768px) {
   .col {

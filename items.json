@@ -1,28 +1,28 @@
 [
   {
     "category": "bebidas",
-    "imgSrc": "ruta_de_la_imagen_espresso.jpg",
+    "imgSrc": "./assets/img/capuccino.jpg",
     "alt": "Café Espresso",
     "title": "Café Espresso",
     "description": "Un café fuerte y aromático servido en una taza pequeña."
   },
   {
     "category": "bebidas",
-    "imgSrc": "ruta_de_la_imagen_latte.jpg",
+    "imgSrc": "./assets/img/latte.jpg",
     "alt": "Café Latte",
     "title": "Café Latte",
     "description": "Una combinación suave de café espresso y leche caliente."
   },
   {
     "category": "bakery",
-    "imgSrc": "ruta_de_la_imagen_pastel.jpg",
+    "imgSrc": "./assets/img/pastelchocolate.jpg",
     "alt": "Pastel de Chocolate",
     "title": "Pastel de Chocolate",
     "description": "Un delicioso pastel de chocolate para acompañar tu café."
   },
   {
     "category": "bakery",
-    "imgSrc": "ruta_de_la_imagen_pastel_matilda.jpg",
+    "imgSrc": "./assets/img/pastelchocolate.jpg",
     "alt": "Bruce",
     "title": "Pastel de chocolate como Matilda!",
     "description": "Una porción del icónico pastel de la icónica película para que también alientes a Bruce."
