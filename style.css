@@ -281,7 +281,7 @@ nav ul li a:hover {
 /* ESTILOS FOOTER*/
 
 footer {
-  background-color:#ddcebd;
+  background-color:#271f16;
 }
 
 footer .redes {
@@ -297,16 +297,16 @@ footer .redes .redes-titulo {
   letter-spacing: 1px;
   font-size: 18px;
   padding: 20px 10px 5px 10px;
-  color:#271f16;
+  color:#faf5f2;
 }
 
 footer .redes .redes-titulo h3 {
   font-weight: bold;
-  color:#271f16;
+  color:#faf5f2;
 }
 footer .redes .redes-titulo p {
   font-size: 1rem;
-  color:#271f16;
+  color:#faf5f2;
   margin-bottom: 5px;
 }
 
@@ -329,13 +329,13 @@ footer .redes ul li:hover {
 
 footer .redes  a{
   text-decoration: none;
-  color:#271f16;
+  color:#faf5f2;
 }
 
 footer .contacto-footer {
   display: flex;
   justify-content: center;
-  color: #271f16;
+  color:#faf5f2;
 }
 
 footer .contacto-footer p {
@@ -348,12 +348,19 @@ footer .social ul li:hover {
 footer .autor {
   text-align: center;
   font-size: 15px;
-  background-color:#271f16;
+  background-color:#ddcebd;
 }
 
 footer .autor p {
   padding: 0px;
   margin: 0px;
-  color:#faf5f2;
-  letter-spacing: 2px
+  color:#271f16;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+footer .redes img {
+  width: 80px;
+  height: 60px;
+  padding-bottom: 10px;
 }
