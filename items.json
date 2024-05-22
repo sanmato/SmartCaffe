@@ -36,35 +36,35 @@
   },
   {
     "category": "cafe",
-    "imgSrc": "ruta_de_cafe_colombia.jpg",
+    "imgSrc": "./assets/img/ruta_de_cafe_colombia.jpg",
     "alt": "Colombia de Especialidad",
     "title": "Colombia de Especialidad",
     "description": "Un café de intensidad moderada de especialidad, ideal para cafeteras Espresso o Prensa Francesa."
   },
   {
     "category": "cafe",
-    "imgSrc": "santos_bourbon.jpg",
+    "imgSrc": "./assets/img/santos_bourbon.jpg",
     "alt": "SantosBourbon",
     "title": "Santos Bourbon",
     "description": "De origen brasilero, de intensidad moderada pero un poco mas intensa que el Colombia, con un leve sabor a caramelo, ideal para cualquier cafetera."
   },
   {
     "category": "cafe",
-    "imgSrc": "familiar.jpg",
+    "imgSrc": "./assets/img/familiar.jpg",
     "alt": "Familiar",
     "title": "Familiar",
     "description": "Café familiar en grano."
   },
   {
     "category": "accesorios",
-    "imgSrc": "cafetera_moka.jpg",
+    "imgSrc": "./assets/img/cafetera_moka.jpg",
     "alt": "Moka",
     "title": "Cafetera Moka",
     "description": "Cafetera Moka de estilo italiano, capacidad de 6 pocillos."
   },
   {
     "category": "accesorios",
-    "imgSrc": "molinillo.jpg",
+    "imgSrc": "./assets/img/molinillo.jpg",
     "alt": "Molinillo",
     "title": "Molinillo Eléctrico",
     "description": "Molinillo eléctrico, con estilo de molienda a selección."
@@ -162,49 +162,49 @@
   },
   {
     "category": "cafe",
-    "imgSrc": "ruta fincas",
+    "imgSrc": "./assets/img/ruta_fincas.jpg",
     "alt": "Fincas Espíritu Santo",
     "title": "Fincas Espíritu Santo",
     "description": "De origen Brasil, intensidad media, sabor y aroma a caramelo."
   },
   {
     "category": "cafe",
-    "imgSrc": "ruta amore",
+    "imgSrc": "./assets/img/ruta_amore.jpg",
     "alt": "Amore Rosso",
     "title": "Amore Rosso",
     "description": "Sutiles notas dulces y amaderadas, de carácter profundo."
   },
   {
     "category": "cafe",
-    "imgSrc": "ruta peru",
+    "imgSrc": "./assets/img/ruta_peru.jpg",
     "alt": "Perú de Especialidad",
     "title": "Perú de especialidad",
     "description": "El más delicado grano de café de origen peruano, intensidad media y muy fuerte de aroma."
   },
   {
     "category": "accesorios",
-    "imgSrc": "prensa.jpg",
+    "imgSrc": "./assets/img/prensa.jpg",
     "alt": "Cafetera émbolo",
     "title": "Cafetera émbolo",
     "description": "Cafetera émbolo, conocida también como Prensa Francesa."
   },
   {
     "category": "accesorios",
-    "imgSrc": "espumador.jpg",
+    "imgSrc": "./assets/img/espumador.jpg",
     "alt": "Espumador de leche",
     "title": "Espumador de leche",
     "description": "Espumador de leche eléctrico, puede espumar, calentar, o calentar y espumar"
   },
   {
     "category": "accesorios",
-    "imgSrc": "taza.jpg",
+    "imgSrc": "./assets/img/taza.jpg",
     "alt": "Taza",
     "title": "Taza para café",
     "description": "La mejor taza para acompañar tu café, consultar para personalizar."
   },
   {
     "category": "accesorios",
-    "imgSrc": "filtro.jpg",
+    "imgSrc": "./assets/img/filtro.jpg",
     "alt": "Cafetera Filtro",
     "title": "Cafetera Filtro",
     "description": "Cafetera de Filtro, capacidad de 6 pocillos."
