@@ -364,3 +364,60 @@ footer .redes img {
   height: 60px;
   padding-bottom: 10px;
 }
+
+
+/* ESTILOS SECTION NOSOTROS*/
+
+.contenedor-nosotros {
+  max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.imagen-nosotros {
+  flex: 1;
+  margin-bottom: 40px;
+  
+}
+
+.imagen-nosotros img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.imagen-nosotros:last-child{
+  margin-top: 250px
+}
+
+.contenido-nosotros {
+  flex: 2;
+  text-align: center;
+  margin: 50px;
+}
+
+.contenido-nosotros h2 {
+  font-family: "TiltWarp", sans-serif;
+  margin-bottom: 20px;
+}
+
+.contenido-nosotros p {
+  margin-top: 20px;
+  text-align: justify;
+  text-indent: 20px;
+}
+
+.contenido-nosotros p:last-child {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contenedor-nosotros {
+      flex-direction: column;
+      align-items: center;
+  }
+}
