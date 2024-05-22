@@ -1,7 +1,7 @@
 [
   {
     "category": "bebidas",
-    "imgSrc": "./assets/img/capuccino.jpg",
+    "imgSrc": ".ruta_espresso",
     "alt": "Café Espresso",
     "title": "Café Espresso",
     "description": "Un café fuerte y aromático servido en una taza pequeña."
@@ -15,16 +15,16 @@
   },
   {
     "category": "bakery",
-    "imgSrc": "./assets/img/pastelfrutilla.jpg",
+    "imgSrc": "Ruta pastel comun chocolate",
     "alt": "Pastel de Chocolate",
     "title": "Pastel de Chocolate",
-    "description": "Un delicioso pastel de chocolate para acompañar tu café."
+    "description": "Un delicioso pastel clásico de chocolate para acompañar tu café."
   },
   {
     "category": "bakery",
     "imgSrc": "./assets/img/pastelchocolate.jpg",
     "alt": "Bruce",
-    "title": "Pastel de chocolate como Matilda!",
+    "title": "Pastel de Chocolate como Matilda!",
     "description": "Una porción del icónico pastel de la icónica película para que también alientes a Bruce."
   },
   {
@@ -82,5 +82,131 @@
     "alt": "Mocca",
     "title": "Mocca",
     "description": "Una deliciosa combinación de espresso, leche vaporizada, crema batida y un toque de chocolate, para deleitar tus sentidos."
+  },
+  {
+    "category": "bebidas",
+    "imgSrc": "./assets/img/capuccino.jpg",
+    "alt": "Capuccino",
+    "title": "Capuccino",
+    "description": "Una fusión perfecta de espresso y espuma de leche, coronado con un toque de polvo de cacao."
+  },
+  {
+    "category": "bebidas",
+    "imgSrc": "Ruta flat white",
+    "alt": "Flat White",
+    "title": "Flat White",
+    "description": "El más delicioso café con una fina capa de leche caliente espumada."
+  },
+  {
+    "category": "bebidas",
+    "imgSrc": "Ruta Macchiato",
+    "alt": "Macchiato",
+    "title": "Macchiato",
+    "description": "Café espresso con una muy pequeña porción de leche caliente espumada."
+  },
+  {
+    "category": "bakery",
+    "imgSrc": "Ruta Frutilla",
+    "alt": "Pastel Frutilla",
+    "title": "El pastel favorito de Amelie...",
+    "description": "Para llenarse los dedos de frutillas."
+  },
+  {
+    "category": "bakery",
+    "imgSrc": "Ruta Budin zanahorias",
+    "alt": "Budin Zanahorias",
+    "title": "Budín de Zanahorias",
+    "description": "Delicioso budín de Zanahoria."
+  },
+  {
+    "category": "bakery",
+    "imgSrc": "Ruta Sfogliatella",
+    "alt": "Sfogliatella",
+    "title": "Sfogliatella",
+    "description": "La más crocante con la más rica crema pastelera!"
+  },
+  {
+    "category": "salados",
+    "imgSrc": "Ruta Tostado",
+    "alt": "Tostado Jamón y Queso",
+    "title": "Tostado Jamón y Queso",
+    "description": "Jamón al natural con mozzarella, viene con pan de masa madre."
+  },
+  {
+    "category": "salados",
+    "imgSrc": "Ruta Bagel jyq",
+    "alt": "Bagel con Jamón y Queso",
+    "title": "Bagel con Jamón y Queso",
+    "description": "Bagel con semillas de sésamo, relleno con Jamón al natural y mozzarella."
+  },
+  {
+    "category": "salados",
+    "imgSrc": "Ruta Scon Queso",
+    "alt": "Scon de Queso",
+    "title": "Scon de Queso",
+    "description": "Clásico y sabroso Scon de Queso, una de las especialidades saladas."
+  },
+  {
+    "category": "salados",
+    "imgSrc": "Ruta Bagel guacamole",
+    "alt": "Bagel con Guacamole",
+    "title": "Bagel con Guacamole",
+    "description": "Bagel Integral con semillas de sésamo, con guacamole para untar."
+  },
+  {
+    "category": "salados",
+    "imgSrc": "Ruta Avocado Toast",
+    "alt": "Avocado Toast",
+    "title": "Avocado Toast",
+    "description": "Tostada de campo integral con guacamole, huevo pochado y tomate cherry."
+  },
+  {
+    "category": "cafe",
+    "imgSrc": "ruta fincas",
+    "alt": "Fincas Espíritu Santo",
+    "title": "Fincas Espíritu Santo",
+    "description": "De origen Brasil, intensidad media, sabor y aroma a caramelo."
+  },
+  {
+    "category": "cafe",
+    "imgSrc": "ruta amore",
+    "alt": "Amore Rosso",
+    "title": "Amore Rosso",
+    "description": "Sutiles notas dulces y amaderadas, de carácter profundo."
+  },
+  {
+    "category": "cafe",
+    "imgSrc": "ruta peru",
+    "alt": "Perú de Especialidad",
+    "title": "Perú de especialidad",
+    "description": "El más delicado grano de café de origen peruano, intensidad media y muy fuerte de aroma."
+  },
+  {
+    "category": "accesorios",
+    "imgSrc": "prensa.jpg",
+    "alt": "Cafetera émbolo",
+    "title": "Cafetera émbolo",
+    "description": "Cafetera émbolo, conocida también como Prensa Francesa."
+  },
+  {
+    "category": "accesorios",
+    "imgSrc": "espumador.jpg",
+    "alt": "Espumador de leche",
+    "title": "Espumador de leche",
+    "description": "Espumador de leche eléctrico, puede espumar, calentar, o calentar y espumar"
+  },
+  {
+    "category": "accesorios",
+    "imgSrc": "taza.jpg",
+    "alt": "Taza",
+    "title": "Taza para café",
+    "description": "La mejor taza para acompañar tu café, consultar para personalizar."
+  },
+  {
+    "category": "accesorios",
+    "imgSrc": "filtro.jpg",
+    "alt": "Cafetera Filtro",
+    "title": "Cafetera Filtro",
+    "description": "Cafetera de Filtro, capacidad de 6 pocillos."
   }
 ]
