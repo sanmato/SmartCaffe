@@ -54,32 +54,17 @@ const createMenuContainers = () => {
 getMenuItems().then(createMenuContainers);
 
 window.addEventListener("DOMContentLoaded", () => {
+  // Cargar la navbar
   const navbarContainer = document.getElementById("navbar-container");
-
   fetch("navbar.html")
     .then((response) => response.text())
     .then((html) => {
       navbarContainer.innerHTML = html;
+      initializeStickyNavbar();
     })
     .catch((error) => console.error("Error al cargar la navbar:", error));
-});
 
-let navBar = document.getElementById("navbar-container");
-let sticky = navBar.offsetTop;
-
-window.onscroll = () => {
-  staticNav();
-};
-
-const staticNav = () => {
-  if (window.scrollY >= sticky) {
-    navBar.classList.add("sticky");
-  } else {
-    navBar.classList.remove("sticky");
-  }
-};
-
-window.addEventListener("DOMContentLoaded", () => {
+  // Cargar el footer
   const footerContainer = document.getElementById("footer-container");
   fetch("footer.html")
     .then((response) => response.text())
@@ -88,6 +73,21 @@ window.addEventListener("DOMContentLoaded", () => {
     })
     .catch((error) => console.error("Error al cargar el footer:", error));
 });
+
+const initializeStickyNavbar = () => {
+  const navBar = document.getElementById("navbar-container");
+  const sticky = navBar.offsetTop;
+
+  const staticNav = () => {
+    if (window.scrollY >= sticky) {
+      navBar.classList.add("sticky");
+    } else {
+      navBar.classList.remove("sticky");
+    }
+  };
+
+  window.onscroll = staticNav;
+};
 
 window.onload = () => {
   createMenuContainers();
