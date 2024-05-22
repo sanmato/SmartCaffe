@@ -79,6 +79,16 @@ const staticNav = () => {
   }
 };
 
+window.addEventListener("DOMContentLoaded", () => {
+  const footerContainer = document.getElementById("footer-container");
+  fetch("footer.html")
+    .then((response) => response.text())
+    .then((html) => {
+      footerContainer.innerHTML = html;
+    })
+    .catch((error) => console.error("Error al cargar el footer:", error));
+});
+
 window.onload = () => {
   createMenuContainers();
 };
