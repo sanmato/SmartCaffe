@@ -38,6 +38,7 @@ const createMenuContainers = () => {
           <img src="${item.imgSrc}" alt="${item.alt}" />
           <h3>${item.title}</h3>
           <p>${item.description}</p>
+          <a href="#comprar" class="boton-comprar">Comprar ahora</a>
           `;
       container.appendChild(menuItemDiv);
     });
@@ -54,7 +55,7 @@ const createMenuContainers = () => {
 getMenuItems().then(createMenuContainers);
 
 window.addEventListener("DOMContentLoaded", () => {
-  // Cargar la navbar
+  // Cargamos la navbar
   const navbarContainer = document.getElementById("navbar-container");
   fetch("navbar.html")
     .then((response) => response.text())
@@ -64,7 +65,7 @@ window.addEventListener("DOMContentLoaded", () => {
     })
     .catch((error) => console.error("Error al cargar la navbar:", error));
 
-  // Cargar el footer
+  // Cargamos el footer
   const footerContainer = document.getElementById("footer-container");
   fetch("footer.html")
     .then((response) => response.text())
