@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 @font-face {
   font-family: "Roboto";
   src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
@@ -148,6 +147,15 @@ nav ul li a:hover {
   margin-bottom: 0.5rem; /* Reducido el espacio entre la imagen y el texto */
 }
 
+.container h2 {
+  padding: 1.5rem;
+  font-family: "TiltWarp", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 3rem;
+  margin-bottom: 1rem;
+}
+
 .menu-item h3 {
   font-size: 1.1rem; /* Tamaño de fuente reducido */
   font-weight: bold;
@@ -277,11 +285,10 @@ nav ul li a:hover {
   z-index: 1000;
 }
 
-
 /* ESTILOS FOOTER*/
 
 footer {
-  background-color:#271f16;
+  background-color: #271f16;
 }
 
 footer .redes {
@@ -297,16 +304,16 @@ footer .redes .redes-titulo {
   letter-spacing: 1px;
   font-size: 18px;
   padding: 20px 10px 5px 10px;
-  color:#faf5f2;
+  color: #faf5f2;
 }
 
 footer .redes .redes-titulo h3 {
   font-weight: bold;
-  color:#faf5f2;
+  color: #faf5f2;
 }
 footer .redes .redes-titulo p {
   font-size: 1rem;
-  color:#faf5f2;
+  color: #faf5f2;
   margin-bottom: 5px;
 }
 
@@ -326,16 +333,15 @@ footer .redes ul li:hover {
   transform: translateY(-2px);
 }
 
-
-footer .redes  a{
+footer .redes a {
   text-decoration: none;
-  color:#faf5f2;
+  color: #faf5f2;
 }
 
 footer .contacto-footer {
   display: flex;
   justify-content: center;
-  color:#faf5f2;
+  color: #faf5f2;
 }
 
 footer .contacto-footer p {
@@ -348,13 +354,13 @@ footer .social ul li:hover {
 footer .autor {
   text-align: center;
   font-size: 15px;
-  background-color:#ddcebd;
+  background-color: #ddcebd;
 }
 
 footer .autor p {
   padding: 0px;
   margin: 0px;
-  color:#271f16;
+  color: #271f16;
   letter-spacing: 2px;
   font-weight: bold;
 }

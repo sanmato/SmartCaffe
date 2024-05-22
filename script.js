@@ -38,6 +38,7 @@ const createMenuContainers = () => {
           <img src="${item.imgSrc}" alt="${item.alt}" />
           <h3>${item.title}</h3>
           <p>${item.description}</p>
+          <a href="#comprar" class="boton-comprar">Comprar ahora</a>
           `;
       container.appendChild(menuItemDiv);
     });
