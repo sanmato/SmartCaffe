@@ -90,6 +90,28 @@ const initializeStickyNavbar = () => {
   window.onscroll = staticNav;
 };
 
+//MANEJO DE MAIL
+
+emailjs.init("32G2HiEDAkpEVXid8"); //ID DE USUARIO DE LA API EMAILJS
+
+const form = document.getElementById("mail");
+
+const sendEmail = (event) => {
+  event.preventDefault();
+
+  emailjs.sendForm("service_urq6rpc", "template_2x26gsz", event.target).then(
+    //Aca seteamos los id de template y servicio
+    () => {
+      alert("Correo enviado correctamente!");
+    },
+    (error) => {
+      console.log("Error al enviar el correo", error);
+    }
+  );
+};
+
+form.addEventListener("submit", sendEmail);
+
 window.onload = () => {
   createMenuContainers();
 };

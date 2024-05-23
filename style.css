@@ -425,3 +425,42 @@ footer .redes img {
     align-items: center;
   }
 }
+
+/*ESTILO FORM*/
+
+#contactenos {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 45% 50px 50px;
+  font-family: "TiltWarp";
+}
+
+.form-control {
+  background-color: rgba(230, 228, 227, 0.5);
+}
+
+.form-control::placeholder {
+  opacity: calc(0.4);
+}
+
+#btn-form {
+  background-color: #d97e42;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-left: 42%;
+}
+
+label {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+#btn-form:hover {
+  background-color: #271f16;
+  color: #faf5f2;
+}
