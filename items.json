@@ -1,7 +1,7 @@
 [
   {
     "category": "bebidas",
-    "imgSrc": ".ruta_espresso",
+    "imgSrc": "./assets/img/espresso.jpg",
     "alt": "Café Espresso",
     "title": "Café Espresso",
     "description": "Un café fuerte y aromático servido en una taza pequeña."
@@ -15,10 +15,10 @@
   },
   {
     "category": "bakery",
-    "imgSrc": "Ruta pastel comun chocolate",
-    "alt": "Pastel de Chocolate",
-    "title": "Pastel de Chocolate",
-    "description": "Un delicioso pastel clásico de chocolate para acompañar tu café."
+    "imgSrc": "./assets/img/cheesecake.jpg",
+    "alt": "Cheesecake",
+    "title": "Cheesecake",
+    "description": "Un clásico irresistible que acompaña perfectamente tu café favorito! "
   },
   {
     "category": "bakery",
@@ -29,7 +29,7 @@
   },
   {
     "category": "salados",
-    "imgSrc": "ruta_de_croissant.jpg",
+    "imgSrc": "./assets/img/ruta_de_croissant.jpg",
     "alt": "Croissant",
     "title": "Croissant Simple",
     "description": "El más perfectamente horneado Croissant, para acompañar cualquier infusión!"
@@ -92,70 +92,70 @@
   },
   {
     "category": "bebidas",
-    "imgSrc": "Ruta flat white",
+    "imgSrc": "./assets/img/flat_white.jpg",
     "alt": "Flat White",
     "title": "Flat White",
     "description": "El más delicioso café con una fina capa de leche caliente espumada."
   },
   {
     "category": "bebidas",
-    "imgSrc": "Ruta Macchiato",
+    "imgSrc": "./assets/img/macchiato.jpg",
     "alt": "Macchiato",
     "title": "Macchiato",
     "description": "Café espresso con una muy pequeña porción de leche caliente espumada."
   },
   {
     "category": "bakery",
-    "imgSrc": "Ruta Frutilla",
+    "imgSrc": "./assets/img/pastelfrutilla.jpg",
     "alt": "Pastel Frutilla",
     "title": "El pastel favorito de Amelie...",
     "description": "Para llenarse los dedos de frutillas."
   },
   {
     "category": "bakery",
-    "imgSrc": "Ruta Budin zanahorias",
+    "imgSrc": "./assets/img/budin_zanahorias.jpg",
     "alt": "Budin Zanahorias",
     "title": "Budín de Zanahorias",
     "description": "Delicioso budín de Zanahoria."
   },
   {
     "category": "bakery",
-    "imgSrc": "Ruta Sfogliatella",
+    "imgSrc": "./assets/img/sfogliatella.jpg",
     "alt": "Sfogliatella",
     "title": "Sfogliatella",
     "description": "La más crocante con la más rica crema pastelera!"
   },
   {
     "category": "salados",
-    "imgSrc": "Ruta Tostado",
+    "imgSrc": "./assets/img/tostado.jpg",
     "alt": "Tostado Jamón y Queso",
     "title": "Tostado Jamón y Queso",
     "description": "Jamón al natural con mozzarella, viene con pan de masa madre."
   },
   {
     "category": "salados",
-    "imgSrc": "Ruta Bagel jyq",
+    "imgSrc": "./assets/img/bagel_jyq.jpg",
     "alt": "Bagel con Jamón y Queso",
     "title": "Bagel con Jamón y Queso",
     "description": "Bagel con semillas de sésamo, relleno con Jamón al natural y mozzarella."
   },
   {
     "category": "salados",
-    "imgSrc": "Ruta Scon Queso",
+    "imgSrc": "./assets/img/scon_queso.jpg",
     "alt": "Scon de Queso",
     "title": "Scon de Queso",
     "description": "Clásico y sabroso Scon de Queso, una de las especialidades saladas."
   },
   {
     "category": "salados",
-    "imgSrc": "Ruta Bagel guacamole",
+    "imgSrc": "./assets/img/bagel_guacamole.jpg",
     "alt": "Bagel con Guacamole",
     "title": "Bagel con Guacamole",
     "description": "Bagel Integral con semillas de sésamo, con guacamole para untar."
   },
   {
     "category": "salados",
-    "imgSrc": "Ruta Avocado Toast",
+    "imgSrc": "./assets/img/avocado_toast.jpg",
     "alt": "Avocado Toast",
     "title": "Avocado Toast",
     "description": "Tostada de campo integral con guacamole, huevo pochado y tomate cherry."
