@@ -38,6 +38,7 @@ const createMenuContainers = () => {
           <img src="${item.imgSrc}" alt="${item.alt}" />
           <h3>${item.title}</h3>
           <p>${item.description}</p>
+          <p style="text-align: center;"> <b> $ ${item.precio} </b> </p>
           <a href="#comprar" class="boton-comprar">Comprar ahora</a>
           `;
       container.appendChild(menuItemDiv);
@@ -103,6 +104,7 @@ const sendEmail = (event) => {
     //Aca seteamos los id de template y servicio
     () => {
       alert("Correo enviado correctamente!");
+      form.reset();
     },
     (error) => {
       console.log("Error al enviar el correo", error);

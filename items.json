@@ -4,209 +4,239 @@
     "imgSrc": "./assets/img/espresso.jpg",
     "alt": "Café Espresso",
     "title": "Café Espresso",
-    "description": "Un café fuerte y aromático servido en una taza pequeña."
+    "description": "Un café fuerte y aromático servido en una taza pequeña.",
+    "precio": "1800"
   },
   {
     "category": "bebidas",
     "imgSrc": "./assets/img/latte.jpg",
     "alt": "Café Latte",
     "title": "Café Latte",
-    "description": "Una combinación suave de café espresso y leche caliente."
+    "description": "Una combinación suave de café espresso y leche caliente.",
+    "precio": "3600"
   },
   {
     "category": "bakery",
     "imgSrc": "./assets/img/cheesecake.jpg",
     "alt": "Cheesecake",
     "title": "Cheesecake",
-    "description": "Un clásico irresistible que acompaña perfectamente tu café favorito! "
+    "description": "Un clásico irresistible que acompaña perfectamente tu café favorito!",
+    "precio": "4500 porción"
   },
   {
     "category": "bakery",
     "imgSrc": "./assets/img/pastelchocolate.jpg",
     "alt": "Bruce",
     "title": "Pastel de Chocolate como Matilda!",
-    "description": "Una porción del icónico pastel de la icónica película para que también alientes a Bruce."
+    "description": "Una porción del icónico pastel de la icónica película para que también alientes a Bruce.",
+    "precio": "5200 porción"
   },
   {
     "category": "salados",
     "imgSrc": "./assets/img/ruta_de_croissant.jpg",
     "alt": "Croissant",
     "title": "Croissant Simple",
-    "description": "El más perfectamente horneado Croissant, para acompañar cualquier infusión!"
+    "description": "El más perfectamente horneado Croissant, para acompañar cualquier infusión!",
+    "precio": "1650"
   },
   {
     "category": "cafe",
     "imgSrc": "./assets/img/ruta_de_cafe_colombia.jpg",
     "alt": "Colombia de Especialidad",
     "title": "Colombia de Especialidad",
-    "description": "Un café de intensidad moderada de especialidad, ideal para cafeteras Espresso o Prensa Francesa."
+    "description": "Un café de intensidad moderada de especialidad, ideal para cafeteras Espresso o Prensa Francesa.",
+    "precio": "73530 kg"
   },
   {
     "category": "cafe",
     "imgSrc": "./assets/img/santos_bourbon.jpg",
     "alt": "SantosBourbon",
     "title": "Santos Bourbon",
-    "description": "De origen brasilero, de intensidad moderada pero un poco mas intensa que el Colombia, con un leve sabor a caramelo, ideal para cualquier cafetera."
+    "description": "De origen brasilero, de intensidad moderada pero un poco mas intensa que el Colombia, con un leve sabor a caramelo, ideal para cualquier cafetera.",
+    "precio": "63940 kg"
   },
   {
     "category": "cafe",
     "imgSrc": "./assets/img/familiar.jpg",
     "alt": "Familiar",
     "title": "Familiar",
-    "description": "Café familiar en grano."
+    "description": "Café familiar en grano.",
+    "precio": "61940 kg"
   },
   {
     "category": "accesorios",
     "imgSrc": "./assets/img/cafetera_moka.jpg",
     "alt": "Moka",
     "title": "Cafetera Moka",
-    "description": "Cafetera Moka de estilo italiano, capacidad de 6 pocillos."
+    "description": "Cafetera Moka de estilo italiano, capacidad de 6 pocillos.",
+    "precio": "130581"
   },
   {
     "category": "accesorios",
     "imgSrc": "./assets/img/molinillo.jpg",
     "alt": "Molinillo",
     "title": "Molinillo Eléctrico",
-    "description": "Molinillo eléctrico, con estilo de molienda a selección."
+    "description": "Molinillo eléctrico, con estilo de molienda a selección.",
+    "precio": "53700"
   },
   {
     "category": "bakery",
     "imgSrc": "./assets/img/lemonpie.jpg",
     "alt": "Lemon Pie",
     "title": "Si la vida te da limones...",
-    "description": "Qué mejor que hacer un delicioso Lemon Pie?"
+    "description": "Qué mejor que hacer un delicioso Lemon Pie?",
+    "precio": "4200 porción"
   },
   {
     "category": "bebidas",
     "imgSrc": "./assets/img/mocca.jpg",
     "alt": "Mocca",
     "title": "Mocca",
-    "description": "Una deliciosa combinación de espresso, leche vaporizada, crema batida y un toque de chocolate, para deleitar tus sentidos."
+    "description": "Una deliciosa combinación de espresso, leche vaporizada, crema batida y un toque de chocolate, para deleitar tus sentidos.",
+    "precio": "5200"
   },
   {
     "category": "bebidas",
     "imgSrc": "./assets/img/capuccino.jpg",
     "alt": "Capuccino",
     "title": "Capuccino",
-    "description": "Una fusión perfecta de espresso y espuma de leche, coronado con un toque de polvo de cacao."
+    "description": "Una fusión perfecta de espresso y espuma de leche, coronado con un toque de polvo de cacao.",
+    "precio": "3850"
   },
   {
     "category": "bebidas",
     "imgSrc": "./assets/img/flat_white.jpg",
     "alt": "Flat White",
     "title": "Flat White",
-    "description": "El más delicioso café con una fina capa de leche caliente espumada."
+    "description": "El más delicioso café con una fina capa de leche caliente espumada.",
+    "precio": "3200"
   },
   {
     "category": "bebidas",
     "imgSrc": "./assets/img/macchiato.jpg",
     "alt": "Macchiato",
     "title": "Macchiato",
-    "description": "Café espresso con una muy pequeña porción de leche caliente espumada."
+    "description": "Café espresso con una muy pequeña porción de leche caliente espumada.",
+    "precio": "4200"
   },
   {
     "category": "bakery",
     "imgSrc": "./assets/img/pastelfrutilla.jpg",
     "alt": "Pastel Frutilla",
     "title": "El pastel favorito de Amelie...",
-    "description": "Para llenarse los dedos de frutillas."
+    "description": "Para llenarse los dedos de frutillas.",
+    "precio": "5100 porción"
   },
   {
     "category": "bakery",
     "imgSrc": "./assets/img/budin_zanahorias.jpg",
     "alt": "Budin Zanahorias",
     "title": "Budín de Zanahorias",
-    "description": "Delicioso budín de Zanahoria."
+    "description": "Delicioso budín de Zanahoria.",
+    "precio": "3500 porción"
   },
   {
     "category": "bakery",
     "imgSrc": "./assets/img/sfogliatella.jpg",
     "alt": "Sfogliatella",
     "title": "Sfogliatella",
-    "description": "La más crocante con la más rica crema pastelera!"
+    "description": "La más crocante con la más rica crema pastelera!",
+    "precio": "3720"
   },
   {
     "category": "salados",
     "imgSrc": "./assets/img/tostado.jpg",
     "alt": "Tostado Jamón y Queso",
     "title": "Tostado Jamón y Queso",
-    "description": "Jamón al natural con mozzarella, viene con pan de masa madre."
+    "description": "Jamón al natural con mozzarella, viene con pan de masa madre.",
+    "precio": "3900"
   },
   {
     "category": "salados",
     "imgSrc": "./assets/img/bagel_jyq.jpg",
     "alt": "Bagel con Jamón y Queso",
     "title": "Bagel con Jamón y Queso",
-    "description": "Bagel con semillas de sésamo, relleno con Jamón al natural y mozzarella."
+    "description": "Bagel con semillas de sésamo, relleno con Jamón al natural y mozzarella.",
+    "precio": "3500"
   },
   {
     "category": "salados",
     "imgSrc": "./assets/img/scon_queso.jpg",
     "alt": "Scon de Queso",
     "title": "Scon de Queso",
-    "description": "Clásico y sabroso Scon de Queso, una de las especialidades saladas."
+    "description": "Clásico y sabroso Scon de Queso, una de las especialidades saladas.",
+    "precio": "3800"
   },
   {
     "category": "salados",
     "imgSrc": "./assets/img/bagel_guacamole.jpg",
     "alt": "Bagel con Guacamole",
     "title": "Bagel con Guacamole",
-    "description": "Bagel Integral con semillas de sésamo, con guacamole para untar."
+    "description": "Bagel Integral con semillas de sésamo, con guacamole para untar.",
+    "precio": "4100"
   },
   {
     "category": "salados",
     "imgSrc": "./assets/img/avocado_toast.jpg",
     "alt": "Avocado Toast",
     "title": "Avocado Toast",
-    "description": "Tostada de campo integral con guacamole, huevo pochado y tomate cherry."
+    "description": "Tostada de campo integral con guacamole, huevo pochado y tomate cherry.",
+    "precio": "4200"
   },
   {
     "category": "cafe",
     "imgSrc": "./assets/img/ruta_fincas.jpg",
     "alt": "Fincas Espíritu Santo",
     "title": "Fincas Espíritu Santo",
-    "description": "De origen Brasil, intensidad media, sabor y aroma a caramelo."
+    "description": "De origen Brasil, intensidad media, sabor y aroma a caramelo.",
+    "precio": "58140 kg"
   },
   {
     "category": "cafe",
     "imgSrc": "./assets/img/ruta_amore.jpg",
     "alt": "Amore Rosso",
     "title": "Amore Rosso",
-    "description": "Sutiles notas dulces y amaderadas, de carácter profundo."
+    "description": "Sutiles notas dulces y amaderadas, de carácter profundo.",
+    "precio": "59650 kg"
   },
   {
     "category": "cafe",
     "imgSrc": "./assets/img/ruta_peru.jpg",
     "alt": "Perú de Especialidad",
     "title": "Perú de especialidad",
-    "description": "El más delicado grano de café de origen peruano, intensidad media y muy fuerte de aroma."
+    "description": "El más delicado grano de café de origen peruano, intensidad media y muy fuerte de aroma.",
+    "precio": "72350 kg"
   },
   {
     "category": "accesorios",
     "imgSrc": "./assets/img/prensa.jpg",
     "alt": "Cafetera émbolo",
     "title": "Cafetera émbolo",
-    "description": "Cafetera émbolo, conocida también como Prensa Francesa."
+    "description": "Cafetera émbolo, conocida también como Prensa Francesa.",
+    "precio": "79020"
   },
   {
     "category": "accesorios",
     "imgSrc": "./assets/img/espumador.jpg",
     "alt": "Espumador de leche",
     "title": "Espumador de leche",
-    "description": "Espumador de leche eléctrico, puede espumar, calentar, o calentar y espumar"
+    "description": "Espumador de leche eléctrico, puede espumar, calentar, o calentar y espumar",
+    "precio": "38920"
   },
   {
     "category": "accesorios",
     "imgSrc": "./assets/img/taza.jpg",
     "alt": "Taza",
     "title": "Taza para café",
-    "description": "La mejor taza para acompañar tu café, consultar para personalizar."
+    "description": "La mejor taza para acompañar tu café, consultar para personalizar.",
+    "precio": "18340"
   },
   {
     "category": "accesorios",
     "imgSrc": "./assets/img/filtro.jpg",
     "alt": "Cafetera Filtro",
     "title": "Cafetera Filtro",
-    "description": "Cafetera de Filtro, capacidad de 6 pocillos."
+    "description": "Cafetera de Filtro, capacidad de 6 pocillos.",
+    "precio": "128460"
   }
 ]
