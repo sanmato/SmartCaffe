@@ -373,59 +373,114 @@ footer .redes img {
 
 /* ESTILOS SECTION NOSOTROS*/
 
-.contenedor-nosotros {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 30px;
+.about-us {
+  background-color:#e6ded5;
+  padding: 50px;
+  margin: 100px 300px;
+  border-radius: 20px;
 }
 
-.imagen-nosotros {
-  flex: 1;
+.about-us h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color:#271f16;
+  font-family: "TiltWarp", sans-serif;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   margin-bottom: 40px;
 }
 
-.imagen-nosotros img {
-  max-width: 100%;
+.about-section:nth-child(odd) .image {
+  order: 1;
+}
+
+.about-section:nth-child(odd) .text {
+  order: 2;
+}
+
+.about-section:nth-child(even) .image {
+  order: 2;
+}
+
+.about-section:nth-child(even) .text {
+  order: 1;
+}
+
+.image,
+.text {
+  flex: 1 1 50%;
+}
+
+.image img {
+  width: 450px;
   height: auto;
-  border-radius: 30px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.imagen-nosotros:last-child {
-  margin-top: 250px;
-}
-
-.contenido-nosotros {
-  flex: 2;
-  text-align: center;
-  margin: 50px;
-}
-
-.contenido-nosotros h2 {
+.text h3 {
+  margin-top: 0;
+  color:#271f16;
   font-family: "TiltWarp", sans-serif;
-  margin-bottom: 20px;
+  
 }
 
-.contenido-nosotros p {
-  margin-top: 20px;
+.text p {
+  color:#242121;
+  line-height: 1.6;
   text-align: justify;
   text-indent: 20px;
 }
 
-.contenido-nosotros p:last-child {
-  margin-top: 50px;
-}
+@media (max-width: 1300px) {
+  .about-section {
+      flex-direction: column;
+      text-align: center;
+  }
 
-@media only screen and (max-width: 768px) {
-  .contenedor-nosotros {
-    flex-direction: column;
-    align-items: center;
+  .image, .text {
+      flex: 1 1 100%;
+      padding: 20px;
+  }
+
+  .image img {
+      width: 60%;
+      margin-bottom: 20px;
   }
 }
 
+@media (max-width: 480px) {
+  .image img {
+      width: 80%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-us {
+      flex-direction: column;
+      text-align: center;
+      margin: 50px;
+  }
+}
+
+@media (max-width: 1650px) {
+  .text p {
+      flex-direction: column;
+      text-align: center;
+      margin: 50px;
+      
+  }
+
+  .text h3 {
+    text-align: center;
+  }
+}
 /*ESTILO FORM*/
 
 #contactenos {
