@@ -93,26 +93,27 @@ const initializeStickyNavbar = () => {
 
 //MANEJO DE MAIL
 
-emailjs.init("32G2HiEDAkpEVXid8"); //ID DE USUARIO DE LA API EMAILJS
-
 const form = document.getElementById("mail");
 
-const sendEmail = (event) => {
-  event.preventDefault();
+if (form) {
+  emailjs.init("32G2HiEDAkpEVXid8"); //ID DE USUARIO DE LA API EMAILJS
+  const sendEmail = (event) => {
+    event.preventDefault();
 
-  emailjs.sendForm("service_urq6rpc", "template_2x26gsz", event.target).then(
-    //Aca seteamos los id de template y servicio
-    () => {
-      alert("Correo enviado correctamente!");
-      form.reset();
-    },
-    (error) => {
-      console.log("Error al enviar el correo", error);
-    }
-  );
-};
+    emailjs.sendForm("service_urq6rpc", "template_2x26gsz", event.target).then(
+      //Aca seteamos los id de template y servicio
+      () => {
+        alert("Correo enviado correctamente!");
+        form.reset();
+      },
+      (error) => {
+        console.log("Error al enviar el correo", error);
+      }
+    );
+  };
 
-form.addEventListener("submit", sendEmail);
+  form.addEventListener("submit", sendEmail);
+}
 
 window.onload = () => {
   createMenuContainers();
