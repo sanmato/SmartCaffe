@@ -39,8 +39,17 @@ const createMenuContainers = () => {
           <h3>${item.title}</h3>
           <p>${item.description}</p>
           <p style="text-align: center;"> <b> $ ${item.precio} </b> </p>
-          <a href="#comprar" class="boton-comprar">Comprar ahora</a>
           `;
+
+      //Aca creamos el botón solo en caso de que la categoria de productos sea de tipo "cafe" y "accesorios"
+      //SE PUEDE MEJORAR, Pasando la lógica a una función fuera del bucle, de momento quedará así.
+      if (item.category === "accesorios" || item.category === "cafe") {
+        const comprarButton = document.createElement("a");
+        comprarButton.href = "#comprar";
+        comprarButton.classList.add("boton-comprar");
+        comprarButton.textContent = "Comprar ahora";
+        menuItemDiv.appendChild(comprarButton);
+      }
       container.appendChild(menuItemDiv);
     });
   };
