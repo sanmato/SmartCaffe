@@ -104,6 +104,16 @@ nav ul li a:hover {
   align-self: flex-start;
 }
 
+@media (max-width: 1000px) {
+  .titulo-banner {
+    font-size: 2rem;
+  }
+  .texto-banner {
+    font-size: 20px;
+  }
+}
+
+
 .texto-banner {
   width: 50%;
   font-size: 1.4rem;
@@ -451,56 +461,92 @@ footer .redes img {
   text-indent: 20px;
 }
 
-@media (max-width: 1300px) {
-  .about-section {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .image, .text {
-      flex: 1 1 100%;
-      padding: 20px;
-  }
-
-  .image img {
-      width: 60%;
-      margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .image img {
-      width: 80%;
-  }
-}
-
 @media (max-width: 1200px) {
+  .image img {
+    width: 300px;
+    margin-bottom: 20px;
+    box-shadow: none;
+
+  }
   .about-us {
-      flex-direction: column;
-      text-align: center;
-      margin: 50px;
+    margin: 0;
+    padding: 8px;
   }
 }
 
-@media (max-width: 1650px) {
-  .text p {
-      flex-direction: column;
-      text-align: center;
-      margin: 50px;
-      
-  }
 
-  .text h3 {
-    text-align: center;
-  }
-}
 /*ESTILO FORM*/
 
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form-container,
+.map-container {
+    flex: 1 1 48%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  margin-bottom: 20px;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .form-container,
+  .map-container {
+      flex: 1 1 100%;
+      padding: 10px;
+  }
+  .map-container {
+    width: 300;
+    height: auto;
+  }
+}
+
+
 #contactenos {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 50px 45% 50px 50px;
   font-family: "TiltWarp";
 }
 

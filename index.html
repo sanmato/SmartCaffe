@@ -176,60 +176,66 @@
       <div class="row" id="saladosItems"></div>
     </div>
 
-    <div class="container" id="contactenos">
-      <h2 class="title">CONTÁCTENOS</h2>
+    <section class="contacto"> 
+      <div class="container form-container" id="contactenos">
+        <h2 class="title">CONTÁCTENOS</h2>
+  
+        <form id="mail">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              name="user_name"
+              placeholder="Ingrese su nombre"
+              required
+            />
+          </div>
+  
+          <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="user_email"
+              placeholder="Ingrese su correo electrónico"
+              required
+            />
+          </div>
+  
+          <div class="form-group">
+            <label for="telefono">Telefono:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="telefono"
+              name="telefono"
+              placeholder="Ingrese su numero telefonico"
+            />
+          </div>
+  
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea
+              class="form-control"
+              id="mensaje"
+              rows="5"
+              name="message"
+              placeholder="Escriba su mensaje aquí"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" id="btn-form" class="btn">Enviar</button>
+        </form>
+      </div>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35565.399919753654!2d-57.579192285316765!3d-38.01056066749736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94d19d34209%3A0xdd9670804bfed126!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1716602066065!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+    
 
-      <form id="mail">
-        <div class="form-group">
-          <label for="nombre">Nombre:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="nombre"
-            name="user_name"
-            placeholder="Ingrese su nombre"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="email">Correo electrónico:</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            name="user_email"
-            placeholder="Ingrese su correo electrónico"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="telefono">Telefono:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="telefono"
-            name="telefono"
-            placeholder="Ingrese su numero telefonico"
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="mensaje">Mensaje:</label>
-          <textarea
-            class="form-control"
-            id="mensaje"
-            rows="5"
-            name="message"
-            placeholder="Escriba su mensaje aquí"
-            required
-          ></textarea>
-        </div>
-
-        <button type="submit" id="btn-form" class="btn">Enviar</button>
-      </form>
-    </div>
 
     <div id="footer-container"></div>
 
