@@ -22,11 +22,13 @@ const createMenuContainers = () => {
     if (!menuByCategory[menuItem.category]) {
       menuByCategory[menuItem.category] = [];
     }
+
     menuByCategory[menuItem.category].push(menuItem);
   });
 
   const createMenuItems = (containerId, items) => {
     const container = document.getElementById(containerId);
+
     if (!container) {
       return;
     }
@@ -34,6 +36,7 @@ const createMenuContainers = () => {
     items.forEach((item) => {
       const menuItemDiv = document.createElement("div");
       menuItemDiv.classList.add("col", "menu-item");
+
       menuItemDiv.innerHTML = `
           <img src="${item.imgSrc}" alt="${item.alt}" />
           <h3>${item.title}</h3>
@@ -50,6 +53,7 @@ const createMenuContainers = () => {
         comprarButton.textContent = "Comprar ahora";
         menuItemDiv.appendChild(comprarButton);
       }
+
       container.appendChild(menuItemDiv);
     });
   };
@@ -62,11 +66,15 @@ const createMenuContainers = () => {
   }
 };
 
-getMenuItems().then(createMenuContainers);
+// Verificar si los datos están cargados antes de llamar a createMenuContainers
+if (menuItems.length === 0) {
+  getMenuItems().then(createMenuContainers);
+}
 
 window.addEventListener("DOMContentLoaded", () => {
   // Cargamos la navbar
   const navbarContainer = document.getElementById("navbar-container");
+
   fetch("navbar.html")
     .then((response) => response.text())
     .then((html) => {
@@ -77,6 +85,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Cargamos el footer
   const footerContainer = document.getElementById("footer-container");
+
   fetch("footer.html")
     .then((response) => response.text())
     .then((html) => {
@@ -101,11 +110,11 @@ const initializeStickyNavbar = () => {
 };
 
 //MANEJO DE MAIL
-
 const form = document.getElementById("mail");
 
 if (form) {
   emailjs.init("32G2HiEDAkpEVXid8"); //ID DE USUARIO DE LA API EMAILJS
+
   const sendEmail = (event) => {
     event.preventDefault();
 
@@ -123,7 +132,3 @@ if (form) {
 
   form.addEventListener("submit", sendEmail);
 }
-
-window.onload = () => {
-  createMenuContainers();
-};
