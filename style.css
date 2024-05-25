@@ -63,31 +63,37 @@ nav ul li a:hover {
   width: 70px;
 }
 
+html {
+  scroll-padding-top: 4rem;
+}
+
 @media (max-width: 768px) {
   #navbar {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .logo img {
-      max-width: 80px;
+    max-width: 80px;
   }
 
   nav ul {
-      margin-top: 10px;
-      margin-bottom: 0;
-      flex-direction: column;
-      width: 100%;
-      padding: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+    flex-direction: column;
+    width: 100%;
   }
 
   nav ul li {
-      margin: 5px 0;
+    margin: 5px 0;
   }
 
   nav ul li a {
-      display: block;
-      width: 100%;
+    display: block;
+    width: 100%;
+  }
+  html {
+    scroll-padding-top: 17rem;
   }
 }
 
@@ -140,7 +146,6 @@ nav ul li a:hover {
     font-size: 15px;
   }
 }
-
 
 .texto-banner {
   width: 50%;
@@ -425,7 +430,7 @@ footer .redes img {
 /* ESTILOS SECTION NOSOTROS*/
 
 .about-us {
-  background-color:#e6ded5;
+  background-color: #e6ded5;
   padding: 50px;
   margin: 100px 300px;
   border-radius: 20px;
@@ -434,7 +439,7 @@ footer .redes img {
 .about-us h2 {
   text-align: center;
   margin-bottom: 50px;
-  color:#271f16;
+  color: #271f16;
   font-family: "TiltWarp", sans-serif;
 }
 
@@ -477,13 +482,12 @@ footer .redes img {
 
 .text h3 {
   margin-top: 0;
-  color:#271f16;
+  color: #271f16;
   font-family: "TiltWarp", sans-serif;
-  
 }
 
 .text p {
-  color:#242121;
+  color: #242121;
   line-height: 1.6;
   text-align: justify;
   text-indent: 20px;
@@ -494,14 +498,12 @@ footer .redes img {
     width: 300px;
     margin-bottom: 20px;
     box-shadow: none;
-
   }
   .about-us {
     margin: 0;
     padding: 8px;
   }
 }
-
 
 /*ESTILO FORM*/
 
@@ -516,9 +518,9 @@ footer .redes img {
 
 .form-container,
 .map-container {
-    flex: 1 1 48%;
-    padding: 10px;
-    box-sizing: border-box;
+  flex: 1 1 48%;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 form {
@@ -545,7 +547,7 @@ form textarea {
 form button {
   margin-top: 20px;
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   cursor: pointer;
@@ -564,15 +566,14 @@ form button:hover {
 @media (max-width: 768px) {
   .form-container,
   .map-container {
-      flex: 1 1 100%;
-      padding: 10px;
+    flex: 1 1 100%;
+    padding: 10px;
   }
   .map-container {
     width: 300;
     height: auto;
   }
 }
-
 
 #contactenos {
   font-family: "TiltWarp";
@@ -594,7 +595,6 @@ form button:hover {
   border: none;
   font-size: 1rem;
   margin-top: 10px;
-  
 }
 
 label {
