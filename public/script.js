@@ -1,23 +1,27 @@
-const menuItems = [];
+let menuItems = [];
 
 const getMenuItems = () => {
-  return fetch("./items.json")
+  return fetch("http://localhost:3000/api/menu")
     .then((response) => {
+      if (!response.ok) {
+        throw new Error("Error al obtener los datos del menú");
+      }
       return response.json();
     })
     .then((json) => {
-      menuItems.push(...json);
+      menuItems = json;
     })
-    .catch((error) => console.error("Error al cargar el archivo JSON", error));
+    .catch((error) => {
+      console.error("Error al cargar los datos desde la API:", error);
+    });
 };
 
-//Para obtener esto dinamicamente, es necesario cargar una serie de funciones.
-
+// Función para crear los contenedores y elementos del menú
 const createMenuContainers = () => {
-  // Creamos un menu para cada categoria
+  // Creamos un objeto para agrupar los elementos del menú por categoría
   const menuByCategory = {};
 
-  // Agrupamos los elementos del menu por categoria
+  // Agrupamos los elementos del menú por categoría
   menuItems.forEach((menuItem) => {
     if (!menuByCategory[menuItem.category]) {
       menuByCategory[menuItem.category] = [];
@@ -26,6 +30,7 @@ const createMenuContainers = () => {
     menuByCategory[menuItem.category].push(menuItem);
   });
 
+  // Función para crear los elementos del menú en un contenedor específico
   const createMenuItems = (containerId, items) => {
     const container = document.getElementById(containerId);
 
@@ -38,14 +43,13 @@ const createMenuContainers = () => {
       menuItemDiv.classList.add("col", "menu-item");
 
       menuItemDiv.innerHTML = `
-          <img src="${item.imgSrc}" alt="${item.alt}" />
-          <h3>${item.title}</h3>
-          <p>${item.description}</p>
-          <p style="text-align: center;"> <b> $ ${item.precio} </b> </p>
-          `;
+        <img src="${item.imgSrc}" alt="${item.alt}" />
+        <h3>${item.title}</h3>
+        <p>${item.description}</p>
+        <p style="text-align: center;"><b>$ ${item.precio}</b></p>
+      `;
 
-      //Aca creamos el botón solo en caso de que la categoria de productos sea de tipo "cafe" y "accesorios"
-      //SE PUEDE MEJORAR, Pasando la lógica a una función fuera del bucle, de momento quedará así.
+      // Agregar botón "Comprar ahora" solo para categorías "accesorios" y "cafe"
       if (item.category === "accesorios" || item.category === "cafe") {
         const comprarButton = document.createElement("a");
         comprarButton.href = "#comprar";
@@ -58,7 +62,7 @@ const createMenuContainers = () => {
     });
   };
 
-  //Crear contenedores y elementos del menu por categoria
+  // Crear contenedores y elementos del menú por categoría
   for (const category in menuByCategory) {
     const containerId = category + "Items";
     const items = menuByCategory[category];
@@ -66,13 +70,9 @@ const createMenuContainers = () => {
   }
 };
 
-// Verificar si los datos están cargados antes de llamar a createMenuContainers
-if (menuItems.length === 0) {
-  getMenuItems().then(createMenuContainers);
-}
-
+// Manejo de eventos al cargar la página
 window.addEventListener("DOMContentLoaded", () => {
-  // Cargamos la navbar
+  // Cargar la barra de navegación (navbar)
   const navbarContainer = document.getElementById("navbar-container");
 
   fetch("navbar.html")
@@ -81,9 +81,11 @@ window.addEventListener("DOMContentLoaded", () => {
       navbarContainer.innerHTML = html;
       initializeStickyNavbar();
     })
-    .catch((error) => console.error("Error al cargar la navbar:", error));
+    .catch((error) =>
+      console.error("Error al cargar la barra de navegación:", error)
+    );
 
-  // Cargamos el footer
+  // Cargar el pie de página (footer)
   const footerContainer = document.getElementById("footer-container");
 
   fetch("footer.html")
@@ -91,9 +93,19 @@ window.addEventListener("DOMContentLoaded", () => {
     .then((html) => {
       footerContainer.innerHTML = html;
     })
-    .catch((error) => console.error("Error al cargar el footer:", error));
+    .catch((error) =>
+      console.error("Error al cargar el pie de página:", error)
+    );
+
+  // Verificar si los datos del menú están cargados antes de llamar a createMenuContainers
+  if (menuItems.length === 0) {
+    getMenuItems().then(createMenuContainers);
+  } else {
+    createMenuContainers();
+  }
 });
 
+// Función para inicializar la barra de navegación pegajosa (sticky navbar)
 const initializeStickyNavbar = () => {
   const navBar = document.getElementById("navbar-container");
   const sticky = navBar.offsetTop;
@@ -109,23 +121,22 @@ const initializeStickyNavbar = () => {
   window.onscroll = staticNav;
 };
 
-//MANEJO DE MAIL
+// Manejo de formularios de email usando EmailJS
 const form = document.getElementById("mail");
 
 if (form) {
-  emailjs.init("32G2HiEDAkpEVXid8"); //ID DE USUARIO DE LA API EMAILJS
+  emailjs.init("32G2HiEDAkpEVXid8"); // ID DE USUARIO DE EMAILJS
 
   const sendEmail = (event) => {
     event.preventDefault();
 
     emailjs.sendForm("service_urq6rpc", "template_2x26gsz", event.target).then(
-      //Aca seteamos los id de template y servicio
       () => {
         alert("Correo enviado correctamente!");
         form.reset();
       },
       (error) => {
-        console.log("Error al enviar el correo", error);
+        console.error("Error al enviar el correo:", error);
       }
     );
   };

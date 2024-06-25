@@ -1,14 +1,22 @@
-const express = require('express');
-const menuRoutes = require('../routes/menuRoutes');
-
+const express = require("express");
+const cors = require("cors");
+const path = require("path");
+const bodyParser = require("body-parser");
 
 const app = express();
 
-app.use(express.json())
-app.use('/menu', menuRoutes);
+// Importar el router de menu
+const menuRouter = require("../routes/menuRoutes");
 
-const PORT = 3020;
+// Middleware
+app.use(cors());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, "..", "public")));
 
-app.listen(PORT,() => {
-    console.log(`server is running on port ${PORT}`);
+// Usar el router de menu
+app.use("/api/menu", menuRouter);
+
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on PORT ${PORT}`);
 });
