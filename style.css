@@ -21,6 +21,9 @@ body {
   background-color: #faf5f2;
 }
 
+html {
+  scroll-padding-top: 4rem;
+}
 
 /* NAVBAR */
 header .navbar {
