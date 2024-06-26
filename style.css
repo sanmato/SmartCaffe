@@ -21,79 +21,55 @@ body {
   background-color: #faf5f2;
 }
 
+
 /* NAVBAR */
-header {
-  background-color: #271f16;
-  padding: 10px 10px;
+header .navbar {
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
-  z-index: 1000;
+  align-items: end;
+  background-color: #271f16;
 }
-
-nav {
-  display: flex;
-  align-items: center;
-  margin-right: 50px;
-  margin-top: 10px;
+header .navbar .logo {
+  margin-left: 30px;
 }
-
-nav ul {
-  display: flex;
-  list-style-type: none;
+header .navbar .logo .navbar-brand {
+  margin-right: auto;
 }
-
-header a {
+header .navbar .logo img {
+  width: 70px
+}
+header .navbar .navbar-nav {
+  margin-left: auto;
+  justify-content: end;
+}
+header .navbar .navbar-nav li a {
   text-decoration: none;
-  color: #faf5f2;
-  margin-left: 40px;
-  float: left;
-  display: block;
+  color:#faf5f2;
+  margin: 10px 20px 20px;
+  padding: 5px;
+}
+header .navbar .navbar-nav li a:hover {
+  color:#d97e42;
 }
 
-nav ul li a:hover {
-  color: #d97e42;
+.inicioSesion {
+  margin-left: 10px;
+  background-color:#cebdab;
+  color:#271f16;
+  border-color:#271f16;
+  
 }
 
-.logo {
-  margin-left: 50px;
+.inicioSesion:hover {
+  background-color:#d97e42;
+  color:#271f16;
+  border-color:#271f16;
 }
 
-.logo img {
-  width: 70px;
-}
-
-html {
-  scroll-padding-top: 4rem;
-}
-
-@media (max-width: 768px) {
-  #navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .logo img {
-    max-width: 80px;
-  }
-
-  nav ul {
-    margin-top: 10px;
-    margin-bottom: 0;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  nav ul li {
-    margin: 5px 0;
-  }
-
-  nav ul li a {
-    display: block;
-    width: 100%;
-  }
-  html {
-    scroll-padding-top: 17rem;
+@media screen and (max-width: 990px) {
+  header .navbar-nav li {
+    margin: 12px;
+    text-align: center;
   }
 }
 
@@ -684,10 +660,11 @@ label {
   justify-content: center;
 }
 
-.btn-primary{
+.btn-primario{
   background-color:#271f16;
   border-color:#271f16;
   border-radius: 5px;
+  color: #faf5f2;
 }
 
 .btn-primary:hover,
