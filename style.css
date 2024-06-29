@@ -26,6 +26,10 @@ html {
 }
 
 /* NAVBAR */
+.navbar-toggler {
+background-color: #faf5f2;
+} 
+
 header .navbar {
   display: flex;
   justify-content: space-between;
@@ -57,7 +61,7 @@ header .navbar .navbar-nav li a:hover {
 
 .inicioSesion {
   margin-left: 10px;
-  background-color:#cebdab;
+  background-color:#faf5f2;
   color:#271f16;
   border-color:#271f16;
   
