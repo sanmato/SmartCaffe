@@ -26,13 +26,20 @@ exports.getAllMenu = (req, res) => {
 
 // module.exports = { getMenu };
 
-const Product = require("../models/product");
-const Category = require("../models/Category");
+const Product = require("../models/Product");
+const Category = require("../models/category");
 
 const getAllProducts = async (req, res) => {
   try {
     const products = await Product.findAll({
-      include: [{ model: Category, as: "category", attributes: ["name"] }],
+      include: [
+        {
+          model: Category,
+          as: "category",
+          attributes: ["name"],
+          table: "categories",
+        },
+      ],
       order: [["id", "ASC"]],
     });
     res.status(200).json(products);
