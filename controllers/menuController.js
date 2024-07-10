@@ -26,7 +26,7 @@ exports.getAllMenu = (req, res) => {
 
 // module.exports = { getMenu };
 
-const Product = require("../models/Product");
+const Product = require("../models/product");
 const Category = require("../models/category");
 
 const getAllProducts = async (req, res) => {
