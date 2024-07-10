@@ -1,7 +1,7 @@
 let menuItems = [];
 
 const getMenuItems = () => {
-  return fetch("http://localhost:3000/api/menu")
+  return fetch("http://sanmato.alwaysdata.net/api/menu")
     .then((response) => {
       if (!response.ok) {
         throw new Error("No se pudo obtener la respuesta correcta de la API");
