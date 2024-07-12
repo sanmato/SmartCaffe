@@ -113,30 +113,33 @@ window.addEventListener("DOMContentLoaded", () => {
     loginForm.addEventListener("submit", async (event) => {
       event.preventDefault();
 
-      const email = document.querySelector("#email").value;
-      const password = document.querySelector("#password").value;
+      try {
+        const email = document.querySelector("#email").value;
+        const password = document.querySelector("#password").value;
 
-      const response = await fetch("http://sanmato.alwaysdata.net/api/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
-      });
+        const response = await fetch(
+          "http://sanmato.alwaysdata.net/api/login",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ email, password }),
+          }
+        );
 
-      const result = await response.json();
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
 
-      if (response.ok) {
+        const result = await response.json();
         console.log("Login successful:", result);
-        // Redirigir a la página deseada después del login exitoso
         window.location.href = "menu.html";
-      } else {
-        console.error("Login failed:", result);
+      } catch (error) {
+        console.error("Login failed:", error);
         document.getElementById("loginError").style.display = "block";
       }
     });
-  } else {
-    console.error("Formulario de login no encontrado");
   }
 });
 

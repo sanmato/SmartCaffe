@@ -7,9 +7,14 @@ require("dotenv").config();
 
 const app = express();
 
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.url}`);
+  next();
+});
+
 // Importar el router de menu
 const menuRouter = require("../routes/menuRoutes");
-const { login } = require("../controllers/userController"); // Importa el controlador de login
+const authRouter = require("../routes/auth");
 
 // Middleware
 app.use(cors());
@@ -21,7 +26,7 @@ app.use(express.static(path.join(__dirname, "..", "public")));
 app.use("/api/menu", menuRouter);
 
 // Ruta de login
-app.post("/api/login", login);
+app.post("/api", login);
 
 sequelize
   .sync()
