@@ -1,7 +1,7 @@
 let menuItems = [];
 
 const getMenuItems = () => {
-  return fetch("http://sanmato.alwaysdata.net/api/menu")
+  return fetch("https://sanmato.alwaysdata.net/api/menu")
     .then((response) => {
       if (!response.ok) {
         throw new Error("No se pudo obtener la respuesta correcta de la API");
@@ -118,7 +118,7 @@ window.addEventListener("DOMContentLoaded", () => {
         const password = document.querySelector("#password").value;
 
         const response = await fetch(
-          "http://sanmato.alwaysdata.net/api/login",
+          "https://sanmato.alwaysdata.net/api/login",
           {
             method: "POST",
             headers: {
