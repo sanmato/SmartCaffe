@@ -9,14 +9,19 @@ const app = express();
 
 // Importar el router de menu
 const menuRouter = require("../routes/menuRoutes");
+const { login } = require("../controllers/userController"); // Importa el controlador de login
 
 // Middleware
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json()); // Asegura que puedes manejar JSON en el cuerpo de las solicitudes
 app.use(express.static(path.join(__dirname, "..", "public")));
 
 // Usar el router de menu
 app.use("/api/menu", menuRouter);
+
+// Ruta de login
+app.post("/api/login", login);
 
 sequelize
   .sync()
