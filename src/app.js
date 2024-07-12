@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, "..", "public")));
 app.use("/api/menu", menuRouter);
 
 // Ruta de login
-app.post("/api", login);
+app.post("/api", authRouter);
 
 sequelize
   .sync()
