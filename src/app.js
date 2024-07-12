@@ -21,6 +21,11 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json()); // Asegura que puedes manejar JSON en el cuerpo de las solicitudes
 app.use(express.static(path.join(__dirname, "..", "public")));
+app.use(express.static(path.join(__dirname, "..")));
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "index.html"));
+});
 
 // Usar el router de menu
 app.use("/api/menu", menuRouter);
