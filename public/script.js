@@ -134,7 +134,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
         const result = await response.json();
         console.log("Login successful:", result);
-        window.location.href = "menu.html";
+        window.location.href = "index.html";
       } catch (error) {
         console.error("Login failed:", error);
         document.getElementById("loginError").style.display = "block";

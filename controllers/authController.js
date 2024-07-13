@@ -8,14 +8,12 @@ const login = async (req, res) => {
 
   try {
     const user = await User.findOne({ where: { email } });
-    console.log("Usuario encontrado:", user);
 
     if (!user) {
       return res.status(401).json({ message: "Usuario no encontrado" });
     }
 
     const isPasswordValid = await bcrypt.compare(password, user.password);
-    console.log("Contraseña válida:", isPasswordValid);
 
     if (!isPasswordValid) {
       return res.status(401).json({ message: "Contraseña incorrecta" });
