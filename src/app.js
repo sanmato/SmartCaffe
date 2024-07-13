@@ -50,3 +50,5 @@ sequelize
   .catch((err) => {
     console.error("Error al sincronizar la base de datos:", err);
   });
+
+console.log("JWT_SECRET:", process.env.JWT_SECRET);
