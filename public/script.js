@@ -131,9 +131,9 @@ window.addEventListener("DOMContentLoaded", () => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-
-        const result = await response.json();
-        console.log("Login successful:", result);
+        alert(
+          "Bienvenido admin! Ahora te encuentras habilitado para gestionar los productos"
+        );
         window.location.href = "index.html";
       } catch (error) {
         console.error("Login failed:", error);
