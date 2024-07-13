@@ -27,8 +27,8 @@ html {
 
 /* NAVBAR */
 .navbar-toggler {
-background-color: #faf5f2;
-} 
+  background-color: #faf5f2;
+}
 
 header .navbar {
   display: flex;
@@ -38,7 +38,7 @@ header .navbar {
 }
 
 .navbar-toggler {
-  background-color:#cebdab;
+  background-color: #cebdab;
 }
 
 header .navbar .logo {
@@ -48,7 +48,7 @@ header .navbar .logo .navbar-brand {
   margin-right: auto;
 }
 header .navbar .logo img {
-  width: 70px
+  width: 70px;
 }
 header .navbar .navbar-nav {
   margin-left: auto;
@@ -56,19 +56,19 @@ header .navbar .navbar-nav {
 }
 header .navbar .navbar-nav li a {
   text-decoration: none;
-  color:#faf5f2;
+  color: #faf5f2;
   margin: 10px 20px 20px;
   padding: 5px;
 }
 header .navbar .navbar-nav li a:hover {
-  color:#d97e42;
+  color: #d97e42;
 }
 
 .inicioSesion {
   margin-left: 10px;
-  background-color:#faf5f2;
-  color:#271f16;
-  border-color:#271f16;
+  background-color: #faf5f2;
+  color: #271f16;
+  border-color: #271f16;
   text-decoration: none;
 }
 
@@ -78,9 +78,9 @@ a {
 }
 
 .inicioSesion:hover {
-  background-color:#d97e42;
-  color:#271f16;
-  border-color:#271f16;
+  background-color: #d97e42;
+  color: #271f16;
+  border-color: #271f16;
 }
 
 @media screen and (max-width: 990px) {
@@ -214,6 +214,38 @@ a {
 }
 
 .menu-item .boton-comprar:hover {
+  background-color: #271f16;
+  color: #faf5f2;
+}
+
+.menu-item .boton-modificar {
+  background-color: #d97e42;
+  color: #fff;
+  padding: 0.5rem 1rem; /* Reducido el espacio del botón */
+  border-radius: 0.25rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.875rem; /* Tamaño de fuente reducido */
+  margin-top: auto; /* Ajusta el espacio entre el último elemento y el botón */
+}
+
+.menu-item .boton-modificar:hover {
+  background-color: #271f16;
+  color: #faf5f2;
+}
+
+.menu-item .boton-eliminar {
+  background-color: #d97e42;
+  color: #fff;
+  padding: 0.5rem 1rem; /* Reducido el espacio del botón */
+  border-radius: 0.25rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.875rem; /* Tamaño de fuente reducido */
+  margin-top: 1rem; /* Ajusta el espacio entre el último elemento y el botón */
+}
+
+.menu-item .boton-eliminar:hover {
   background-color: #271f16;
   color: #faf5f2;
 }
@@ -623,15 +655,14 @@ label {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  background-color:#cebdab;
+  background-color: #cebdab;
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
 }
 
 .form-registro label {
-  color:#271f16;
+  color: #271f16;
   font-size: 15px;
 }
 
@@ -639,7 +670,6 @@ label {
   background-color: #faf5f2;
   padding-right: 40px;
 }
-
 
 .form-registro .row {
   display: flex;
@@ -652,7 +682,7 @@ label {
   text-align: center;
   margin-bottom: 30px;
   margin-top: 20px;
-  color:#271f16;
+  color: #271f16;
   font-family: "TiltWarp", sans-serif;
 }
 
@@ -663,12 +693,12 @@ label {
 .form-control {
   border-radius: 5px;
   box-shadow: none;
-  border-color: #ddd; 
+  border-color: #ddd;
 }
 
 .form-control:focus {
-  border-color:#d97e42; 
-  box-shadow: 0 0 0 0.2rem rgba(207, 196, 182, 0.25); 
+  border-color: #d97e42;
+  box-shadow: 0 0 0 0.2rem rgba(207, 196, 182, 0.25);
 }
 
 .btn-registro {
@@ -677,9 +707,9 @@ label {
   justify-content: center;
 }
 
-.btn-primario{
-  background-color:#271f16;
-  border-color:#271f16;
+.btn-primario {
+  background-color: #271f16;
+  border-color: #271f16;
   border-radius: 5px;
   color: #faf5f2;
 }
@@ -687,10 +717,9 @@ label {
 .btn-primary:hover,
 .btn-primary:focus {
   color: #271f16;
-  background-color:#faf5f2;
-  border-color:#271f16;
+  background-color: #faf5f2;
+  border-color: #271f16;
 }
-
 
 /*ESTILOS LOGIN */
 .login-body {
@@ -704,7 +733,7 @@ label {
 }
 
 .login-container {
-  background-color:#cebdab;
+  background-color: #cebdab;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -741,7 +770,7 @@ h1 {
 .login-button {
   width: 100%;
   padding: 10px;
-  background-color:#271f16;
+  background-color: #271f16;
   border: none;
   border-radius: 4px;
   color: #fff;
@@ -750,12 +779,12 @@ h1 {
 }
 
 .login-button:hover {
-  background-color:#d97e42;
+  background-color: #d97e42;
   color: #0b0a0a;
 }
 
 .register-link {
-  color:#271f16;
+  color: #271f16;
   text-decoration: none;
 }
 
@@ -765,21 +794,21 @@ h1 {
 
 @media (max-width: 480px) {
   .login-container {
-      padding: 15px;
+    padding: 15px;
   }
 
   h1 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .input-group input {
-      padding: 8px;
-      font-size: 14px;
+    padding: 8px;
+    font-size: 14px;
   }
 
   .login-button {
-      padding: 8px;
-      font-size: 14px;
+    padding: 8px;
+    font-size: 14px;
   }
 }
 
@@ -792,7 +821,7 @@ h1 {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color:#cebdab;
+  background-color: #cebdab;
 }
 
 .form-contenedor1 {
@@ -800,7 +829,7 @@ h1 {
   padding: 20px;
   border-radius: 8px;
   margin-top: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 700px;
   width: 100%;
 }
@@ -819,7 +848,9 @@ h1 {
   margin-bottom: 5px;
   color: #333;
 }
-.form-grupo1 input, .form-grupo1 select, .form-grupo1 textarea {
+.form-grupo1 input,
+.form-grupo1 select,
+.form-grupo1 textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -835,7 +866,7 @@ h1 {
 .form-grupo1 button {
   width: 100%;
   padding: 10px;
-  background-color:#271f16;
+  background-color: #271f16;
   border: none;
   border-radius: 4px;
   color: #fff;
@@ -843,5 +874,5 @@ h1 {
   cursor: pointer;
 }
 .form-grupo1 button:hover {
-  background-color:#d97e42;
+  background-color: #d97e42;
 }

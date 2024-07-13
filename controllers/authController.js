@@ -1,5 +1,4 @@
 const User = require("../models/user");
-const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 const login = async (req, res) => {
@@ -30,4 +29,28 @@ const login = async (req, res) => {
   }
 };
 
-module.exports = { login };
+const logout = (req, res) => {
+  // Obtener el token del encabezado de autorización
+  const token = req.headers.authorization;
+
+  if (!token) {
+    return res.status(401).json({ message: "No hay token proporcionado" });
+  }
+
+  try {
+    // Verificar y decodificar el token
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+    // Aquí podrías realizar cualquier acción de limpieza necesaria, por ejemplo:
+    // - Invalidar el token
+    // - Eliminar el token del almacenamiento del cliente (si es necesario)
+
+    // Redireccionar a la página inicial
+    res.redirect("/");
+  } catch (error) {
+    console.error("Error al verificar el token:", error);
+    res.status(500).json({ message: "Error interno del servidor" });
+  }
+};
+
+module.exports = { login, logout };

@@ -52,15 +52,23 @@ const createMenuContainers = () => {
           <p style="text-align: center;"><b>$ ${item.price}</b></p>
         `;
 
-        if (
-          item.category.name === "accesorios" ||
-          item.category.name === "cafe"
-        ) {
-          const comprarButton = document.createElement("a");
-          comprarButton.href = "#comprar";
-          comprarButton.classList.add("boton-comprar");
-          comprarButton.textContent = "Comprar ahora";
-          menuItemDiv.appendChild(comprarButton);
+        // Verificar si el usuario está autenticado
+        const token = localStorage.getItem("token");
+        if (token) {
+          // Agregar botones de modificar y eliminar
+          const modifyButton = document.createElement("a");
+          modifyButton.href = "#modificar";
+          modifyButton.textContent = "Modificar";
+          modifyButton.classList.add("boton-modificar");
+          modifyButton.addEventListener("click", () => modifyItem(item.id));
+          menuItemDiv.appendChild(modifyButton);
+
+          const deleteButton = document.createElement("a");
+          deleteButton.href = "#eliminar";
+          deleteButton.textContent = "Eliminar";
+          deleteButton.classList.add("boton-eliminar");
+          deleteButton.addEventListener("click", () => deleteItem(item.id));
+          menuItemDiv.appendChild(deleteButton);
         }
 
         container.appendChild(menuItemDiv);
@@ -81,6 +89,16 @@ const createMenuContainers = () => {
   }
 };
 
+const modifyItem = (id) => {
+  // Implementar la lógica para modificar el producto
+  alert(`Modificar producto con ID: ${id}`);
+};
+
+const deleteItem = (id) => {
+  // Implementar la lógica para eliminar el producto
+  alert(`Eliminar producto con ID: ${id}`);
+};
+
 getMenuItems();
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -91,6 +109,29 @@ window.addEventListener("DOMContentLoaded", () => {
     .then((html) => {
       navbarContainer.innerHTML = html;
       initializeStickyNavbar();
+
+      const token = localStorage.getItem("token");
+      const loginButton = document.querySelector(".inicioSesion");
+
+      if (token) {
+        // Ocultar botón de login
+        loginButton.style.display = "none";
+
+        // Mostrar botón de logout
+        const logoutButton = document.createElement("button");
+        logoutButton.className = "btn inicioSesion";
+        logoutButton.textContent = "Cerrar Sesión";
+        logoutButton.addEventListener("click", () => {
+          // Eliminar el token del localStorage
+          localStorage.removeItem("token");
+
+          // Redireccionar o actualizar la página según necesites
+          window.location.reload(); // Ejemplo: recarga la página
+        });
+
+        // Insertar el botón de logout en lugar del botón de login
+        loginButton.parentElement.appendChild(logoutButton);
+      }
     })
     .catch((error) =>
       console.error("Error al cargar la barra de navegación:", error)
@@ -131,9 +172,18 @@ window.addEventListener("DOMContentLoaded", () => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
+
+        const result = await response.json();
+        console.log("Login successful:", result);
+
+        // Guardar el token en el almacenamiento local
+        localStorage.setItem("token", result.token);
+
+        // Muestra el mensaje de bienvenida si el login es exitoso
         alert(
           "Bienvenido admin! Ahora te encuentras habilitado para gestionar los productos"
         );
+
         window.location.href = "index.html";
       } catch (error) {
         console.error("Login failed:", error);
