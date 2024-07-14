@@ -20,6 +20,6 @@ router.put("/products/:id", updateProduct);
 
 router.get("/products/:id", getProductById);
 
-router.delete("/products/:id");
+router.delete("/products/:id", deleteProduct);
 
 module.exports = router;

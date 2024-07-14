@@ -94,34 +94,6 @@ const modifyItem = (id) => {
   window.location.href = `form-carga.html?id=${id}`;
 };
 
-const deleteItem = async (id) => {
-  if (confirm("¿Estás seguro de que quieres eliminar este producto?")) {
-    try {
-      const token = localStorage.getItem("token");
-      const response = await fetch(
-        `https://sanmato.alwaysdata.net/api/products/${id}`,
-        {
-          method: "DELETE",
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      alert("Producto eliminado exitosamente");
-      // Recargar la página o actualizar la lista de productos
-      location.reload();
-    } catch (error) {
-      console.error("Error al eliminar el producto:", error);
-      alert("Error al eliminar el producto. Inténtelo nuevamente.");
-    }
-  }
-};
-
 getMenuItems();
 
 const loadProductData = async (id) => {
@@ -257,6 +229,34 @@ const updateProduct = async (event) => {
   } catch (error) {
     console.error("Product update failed:", error);
     alert("Error al actualizar el producto. Inténtelo nuevamente.");
+  }
+};
+
+const deleteItem = async (id) => {
+  if (confirm("¿Estás seguro de que quieres eliminar este producto?")) {
+    try {
+      const token = localStorage.getItem("token");
+      const response = await fetch(
+        `https://sanmato.alwaysdata.net/api/products/${id}`,
+        {
+          method: "DELETE",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      alert("Producto eliminado exitosamente");
+      // Recargar la página o actualizar la lista de productos
+      location.reload();
+    } catch (error) {
+      console.error("Error al eliminar el producto:", error);
+      alert("Error al eliminar el producto. Inténtelo nuevamente.");
+    }
   }
 };
 
