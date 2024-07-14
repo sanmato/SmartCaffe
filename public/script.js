@@ -182,7 +182,7 @@ window.addEventListener("DOMContentLoaded", () => {
         const result = await response.json();
         console.log("Login successful:", result);
 
-        // Guardar el token en el almacenamiento local
+        // Guardamos el token en el almacenamiento local
         localStorage.setItem("token", result.token);
 
         // Muestra el mensaje de bienvenida si el login es exitoso
@@ -194,6 +194,55 @@ window.addEventListener("DOMContentLoaded", () => {
       } catch (error) {
         console.error("Login failed:", error);
         document.getElementById("loginError").style.display = "block";
+      }
+    });
+  }
+  const productForm = document.getElementById("productForm");
+
+  if (productForm) {
+    productForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const formData = new FormData(productForm);
+
+      const productData = {
+        title: formData.get("productName"),
+        category_id: parseInt(formData.get("productType")),
+        image_url: formData.get("productImageUrl"),
+        description: formData.get("productDescription"),
+        price: parseFloat(formData.get("productPrice")),
+        unit_id:
+          formData.get("productUnit") === "4"
+            ? null
+            : parseInt(formData.get("productUnit")),
+      };
+
+      try {
+        const token = localStorage.getItem("token");
+        const response = await fetch(
+          "https://sanmato.alwaysdata.net/api/products",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${token}`,
+            },
+            body: JSON.stringify(productData),
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const result = await response.json();
+        console.log("Product upload successful:", result);
+        alert("Producto cargado exitosamente");
+
+        window.location.href = "index.html";
+      } catch (error) {
+        console.error("Product upload failed:", error);
+        alert("Error al cargar el producto. Inténtelo nuevamente.");
       }
     });
   }
