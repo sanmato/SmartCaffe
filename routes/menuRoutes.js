@@ -7,6 +7,7 @@ const router = express.Router();
 const {
   getAllProducts,
   createProduct,
+  updateProduct,
 } = require("../controllers/menuController");
 
 router.get("/menu", getAllProducts);
