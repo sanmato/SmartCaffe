@@ -8,6 +8,7 @@ const {
   getAllProducts,
   createProduct,
   updateProduct,
+  getProductById,
 } = require("../controllers/menuController");
 
 router.get("/menu", getAllProducts);
@@ -15,5 +16,7 @@ router.get("/menu", getAllProducts);
 router.post("/products", createProduct);
 
 router.put("/products/:id", updateProduct);
+
+router.get("/products/:id", getProductById);
 
 module.exports = router;
