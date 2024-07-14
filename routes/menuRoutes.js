@@ -13,4 +13,6 @@ router.get("/menu", getAllProducts);
 
 router.post("/products", createProduct);
 
+router.put("/products/:id", updateProduct);
+
 module.exports = router;

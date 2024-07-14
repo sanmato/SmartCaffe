@@ -75,4 +75,32 @@ const createProduct = async (req, res) => {
   }
 };
 
-module.exports = { getAllProducts, createProduct };
+const updateProduct = async (req, res) => {
+  const { id } = req.params;
+  const { title, description, price, category_id, unit_id, image_url } =
+    req.body;
+
+  try {
+    const product = await Product.findByPk(id);
+
+    if (!product) {
+      return res.status(404).json({ error: "Producto no encontrado" });
+    }
+
+    await product.update({
+      title,
+      description,
+      price,
+      category_id,
+      unit_id,
+      image_url,
+    });
+
+    res.status(200).json(product);
+  } catch (error) {
+    console.error("Error al actualizar producto:", error);
+    res.status(500).json({ error: "Error al actualizar producto" });
+  }
+};
+
+module.exports = { getAllProducts, createProduct, updateProduct };

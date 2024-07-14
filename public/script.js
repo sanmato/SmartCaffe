@@ -90,8 +90,7 @@ const createMenuContainers = () => {
 };
 
 const modifyItem = (id) => {
-  // Implementar la lógica para modificar el producto
-  alert(`Modificar producto con ID: ${id}`);
+  window.location.href = `form-carga.html?id=${id}`;
 };
 
 const deleteItem = (id) => {
@@ -246,6 +245,77 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  //EDICIÓN DE PRODUCTOS
+  let isEditMode = false;
+
+  const loadProductData = async (id) => {
+    try {
+      const response = await fetch(
+        `https://sanmato.alwaysdata.net/api/products/${id}`
+      );
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const product = await response.json();
+
+      document.getElementById("productName").value = product.title;
+      document.getElementById("productType").value = product.category_id;
+      document.getElementById("productImageUrl").value = product.image_url;
+      document.getElementById("productDescription").value = product.description;
+      document.getElementById("productPrice").value = product.price;
+      document.getElementById("productUnit").value = product.unit_id || "4";
+    } catch (error) {
+      console.error("Error al cargar los datos del producto:", error);
+    }
+  };
+
+  const updateProduct = async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+    const productId = new URLSearchParams(window.location.search).get("id");
+
+    const productData = {
+      title: formData.get("productName"),
+      category_id: parseInt(formData.get("productType")),
+      image_url: formData.get("productImageUrl"),
+      description: formData.get("productDescription"),
+      price: parseFloat(formData.get("productPrice")),
+      unit_id:
+        formData.get("productUnit") === "4"
+          ? null
+          : parseInt(formData.get("productUnit")),
+    };
+
+    try {
+      const token = localStorage.getItem("token");
+      const response = await fetch(
+        `https://sanmato.alwaysdata.net/api/products/${productId}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify(productData),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const result = await response.json();
+      console.log("Product update successful:", result);
+      alert("Producto actualizado exitosamente");
+
+      window.location.href = "index.html";
+    } catch (error) {
+      console.error("Product update failed:", error);
+      alert("Error al actualizar el producto. Inténtelo nuevamente.");
+    }
+  };
 });
 
 const initializeStickyNavbar = () => {
