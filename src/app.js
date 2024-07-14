@@ -12,14 +12,13 @@ app.use((req, res, next) => {
   next();
 });
 
-// Importar el router de menu
 const menuRouter = require("../routes/menuRoutes");
 const authRouter = require("../routes/auth");
 
 // Middleware
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json()); // Asegura que puedes manejar JSON en el cuerpo de las solicitudes
+app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "..", "public")));
 app.use(express.static(path.join(__dirname, "..")));
 

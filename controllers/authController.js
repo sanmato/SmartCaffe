@@ -1,4 +1,4 @@
-const bcrypt = require("bcrypt"); // Asegúrate de importar bcrypt
+const bcrypt = require("bcrypt");
 const User = require("../models/user");
 const jwt = require("jsonwebtoken");
 
@@ -8,7 +8,6 @@ const login = async (req, res) => {
 
   try {
     const user = await User.findOne({ where: { email } });
-    console.log("Usuario encontrado:", user); // Agrega este console.log
 
     if (!user) {
       console.log("Usuario no encontrado");
@@ -16,7 +15,6 @@ const login = async (req, res) => {
     }
 
     const isPasswordValid = await bcrypt.compare(password, user.password);
-    console.log("Contraseña válida:", isPasswordValid); // Agrega este console.log
 
     if (!isPasswordValid) {
       console.log("Contraseña incorrecta");
@@ -43,13 +41,7 @@ const logout = (req, res) => {
   }
 
   try {
-    // Aquí podrías agregar la lógica para invalidar el token, por ejemplo,
-    // agregándolo a una lista negra o revocando su validez.
-
-    // Eliminar el token del almacenamiento del cliente
-    localStorage.removeItem("token"); // Asegúrate de ajustar esto según cómo guardas el token en el cliente
-
-    // Redireccionar a la página inicial u otra página relevante
+    localStorage.removeItem("token");
     res.redirect("/");
   } catch (error) {
     console.error("Error al verificar el token:", error);

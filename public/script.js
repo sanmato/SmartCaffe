@@ -11,7 +11,7 @@ const getMenuItems = () => {
     })
     .then((json) => {
       menuItems = json;
-      createMenuContainers(); // Crea los contenedores después de recibir los datos
+      createMenuContainers();
     })
     .catch((error) => {
       console.error("Error al cargar los datos desde la API:", error);
@@ -288,8 +288,8 @@ window.addEventListener("DOMContentLoaded", () => {
           // Eliminar el token del localStorage
           localStorage.removeItem("token");
 
-          // Redireccionar o actualizar la página según necesites
-          window.location.reload(); // Ejemplo: recarga la página
+          // Redireccionar o actualizar la página
+          window.location.reload();
         });
 
         // Insertar el botón de logout en lugar del botón de login
@@ -356,8 +356,6 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-
-  //EDICIÓN DE PRODUCTO
   handleProductForm();
 });
 
