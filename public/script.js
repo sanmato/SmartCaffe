@@ -94,9 +94,32 @@ const modifyItem = (id) => {
   window.location.href = `form-carga.html?id=${id}`;
 };
 
-const deleteItem = (id) => {
-  // Implementar la lógica para eliminar el producto
-  alert(`Eliminar producto con ID: ${id}`);
+const deleteItem = async (id) => {
+  if (confirm("¿Estás seguro de que quieres eliminar este producto?")) {
+    try {
+      const token = localStorage.getItem("token");
+      const response = await fetch(
+        `https://sanmato.alwaysdata.net/api/products/${id}`,
+        {
+          method: "DELETE",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      alert("Producto eliminado exitosamente");
+      // Recargar la página o actualizar la lista de productos
+      location.reload();
+    } catch (error) {
+      console.error("Error al eliminar el producto:", error);
+      alert("Error al eliminar el producto. Inténtelo nuevamente.");
+    }
+  }
 };
 
 getMenuItems();
