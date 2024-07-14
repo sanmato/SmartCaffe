@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
 });
 
 // Usar el router de menu
-app.use("/api/menu", menuRouter);
+app.use("/api", menuRouter);
 
 // Ruta de login
 app.use("/api", authRouter);

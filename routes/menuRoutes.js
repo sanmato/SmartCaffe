@@ -4,8 +4,13 @@
 
 const express = require("express");
 const router = express.Router();
-const { getAllProducts } = require("../controllers/menuController");
+const {
+  getAllProducts,
+  createProduct,
+} = require("../controllers/menuController");
 
-router.get("/", getAllProducts);
+router.get("/menu", getAllProducts);
+
+router.post("/products", createProduct);
 
 module.exports = router;

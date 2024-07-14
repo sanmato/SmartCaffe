@@ -49,4 +49,30 @@ const getAllProducts = async (req, res) => {
   }
 };
 
-module.exports = { getAllProducts };
+const createProduct = async (req, res) => {
+  const { title, description, price, category_id, unit_id, image_url } =
+    req.body;
+
+  if (!title || !price || !category_id || !image_url) {
+    return res.status(400).json({
+      error: "Los campos título, precio, categoría e imagen son obligatorios",
+    });
+  }
+
+  try {
+    const newProduct = await Product.create({
+      title,
+      description,
+      price,
+      category_id,
+      unit_id,
+      image_url,
+    });
+    res.status(201).json(newProduct);
+  } catch (error) {
+    console.error("Error al crear producto:", error);
+    res.status(500).json({ error: "Error al crear producto" });
+  }
+};
+
+module.exports = { getAllProducts, createProduct };
