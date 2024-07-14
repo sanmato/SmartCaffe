@@ -112,6 +112,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
       const token = localStorage.getItem("token");
       const loginButton = document.querySelector(".inicioSesion");
+      const loadProductButton = document.querySelector(
+        'a[href="form-carga.html#cargarProducto"]'
+      );
+      loadProductButton.style.display = "none";
 
       if (token) {
         // Ocultar botón de login
@@ -131,6 +135,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
         // Insertar el botón de logout en lugar del botón de login
         loginButton.parentElement.appendChild(logoutButton);
+
+        loadProductButton.style.display = "block";
       }
     })
     .catch((error) =>

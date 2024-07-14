@@ -226,7 +226,7 @@ a {
   text-decoration: none;
   text-align: center;
   font-size: 0.875rem; /* Tamaño de fuente reducido */
-  margin-top: auto; /* Ajusta el espacio entre el último elemento y el botón */
+  margin-top: 1rem; /* Ajusta el espacio entre el último elemento y el botón */
 }
 
 .menu-item .boton-modificar:hover {
