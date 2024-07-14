@@ -199,54 +199,68 @@ window.addEventListener("DOMContentLoaded", () => {
   const productForm = document.getElementById("productForm");
 
   if (productForm) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get("id");
+
+    if (productId) {
+      isEditMode = true;
+      loadProductData(productId);
+      document.querySelector('button[type="submit"]').textContent =
+        "Actualizar";
+    }
+
     productForm.addEventListener("submit", async (event) => {
       event.preventDefault();
 
-      const formData = new FormData(productForm);
+      if (isEditMode) {
+        await updateProduct(event);
+      } else {
+        // Tu código existente para crear un nuevo producto
+        const formData = new FormData(productForm);
+        const productData = {
+          title: formData.get("productName"),
+          category_id: parseInt(formData.get("productType")),
+          image_url: formData.get("productImageUrl"),
+          description: formData.get("productDescription"),
+          price: parseFloat(formData.get("productPrice")),
+          unit_id:
+            formData.get("productUnit") === "4"
+              ? null
+              : parseInt(formData.get("productUnit")),
+        };
 
-      const productData = {
-        title: formData.get("productName"),
-        category_id: parseInt(formData.get("productType")),
-        image_url: formData.get("productImageUrl"),
-        description: formData.get("productDescription"),
-        price: parseFloat(formData.get("productPrice")),
-        unit_id:
-          formData.get("productUnit") === "4"
-            ? null
-            : parseInt(formData.get("productUnit")),
-      };
+        try {
+          const token = localStorage.getItem("token");
+          const response = await fetch(
+            "https://sanmato.alwaysdata.net/api/products",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${token}`,
+              },
+              body: JSON.stringify(productData),
+            }
+          );
 
-      try {
-        const token = localStorage.getItem("token");
-        const response = await fetch(
-          "https://sanmato.alwaysdata.net/api/products",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${token}`,
-            },
-            body: JSON.stringify(productData),
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
           }
-        );
 
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
+          const result = await response.json();
+          console.log("Product upload successful:", result);
+          alert("Producto cargado exitosamente");
+
+          window.location.href = "index.html";
+        } catch (error) {
+          console.error("Product upload failed:", error);
+          alert("Error al cargar el producto. Inténtelo nuevamente.");
         }
-
-        const result = await response.json();
-        console.log("Product upload successful:", result);
-        alert("Producto cargado exitosamente");
-
-        window.location.href = "index.html";
-      } catch (error) {
-        console.error("Product upload failed:", error);
-        alert("Error al cargar el producto. Inténtelo nuevamente.");
       }
     });
   }
 
-  //EDICIÓN DE PRODUCTOS
+  //EDICIÓN DE PRODUCTO
   let isEditMode = false;
 
   const loadProductData = async (id) => {
